@@ -1,8 +1,73 @@
 :root {
-  --theme-color: #ec882b;
+  --brown-color: rgb(87, 23, 23);
 }
 
-.content-page {
-  max-width: 1300px;
-  margin: 0 auto;
+.home-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 91vh;
+  &--greeting {
+    font-size: 45px;
+    font-weight: bold;
+  }
+  &--font-color{
+    color: var(--brown-color);
+  } 
+}
+
+.wave-emoji {
+  animation-duration: 1.8s;
+  animation-iteration-count: infinite;
+  animation-name: wave;
+  display: inline-block;
+  transform-origin: 70% 70%;
+  margin-left: 20px;
+}
+
+.img-wrapper {
+  max-width: px;
+  position: relative;
+  margin-right: 170px;
+  &--profile {
+    border-radius: 50%;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    inset: -30px;
+    border: 7px groove;
+    border-color: #FFF var(--brown-color);
+    border-radius: 50%;
+    animation: span 7s linear infinite;
+  }
+}
+
+@keyframes span {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-10deg);
+  }
+  20% {
+    transform: rotate(12deg);
+  }
+  30% {
+    transform: rotate(-10deg);
+  }
+  40% {
+    transform: rotate(9deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }

@@ -1,3 +1,4 @@
+import Header from "../components/Navbar";
 import Home from "./home";
 
 const App = () => {
