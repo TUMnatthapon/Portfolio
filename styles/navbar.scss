@@ -1,3 +1,7 @@
+:root {
+  --brown-color: rgb(87, 23, 23);
+}
+
 .header {
   max-width: auto;
   background-color: rgb(255, 255, 255);
@@ -42,13 +46,15 @@
         transition: 300ms;
         height: 3px;
         position: absolute;
-        background-color: #0c0c0c;
+        background-color: var(--brown-color);;
         width: 0%;
         bottom: 15px;
       }
-
-      &:hover::before {
-        width: 70%;
+      &:hover{
+        color: var(--brown-color);
+        &::before {
+          width: 70%;
+        }
       }
     }
   }
@@ -91,8 +97,11 @@
       padding: 0px 40px;
     }
     li a {
-      &:hover::before {
-        width: 35%;
+       &:hover{
+        color: var(--brown-color);
+        &::before {
+          width: 35%;
+        }
       }
     }
   }

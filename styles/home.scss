@@ -1,7 +1,3 @@
-:root {
-  --brown-color: rgb(87, 23, 23);
-}
-
 .home-content{
   display: flex;
   align-items: center;
@@ -10,10 +6,26 @@
   &--greeting {
     font-size: 45px;
     font-weight: bold;
+    padding-left: 40px;
   }
   &--font-color{
     color: var(--brown-color);
   } 
+}
+
+.button-style {
+  padding: 10px 25px ;
+  color:white;
+  font-size: 15px;
+  text-decoration: none;
+  background-color: var(--brown-color);
+  border: 4px solid var(--brown-color);
+  border-radius: 40px;
+  box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.2), 0 6px 20px  rgba(0, 0, 0, 0.19);
+}
+.button-style:hover {
+  color: var(--brown-color);
+  background-color: white;
 }
 
 .wave-emoji {
@@ -28,7 +40,7 @@
 .img-wrapper {
   max-width: px;
   position: relative;
-  margin-right: 170px;
+  margin-right: 180px;
   &--profile {
     border-radius: 50%;
   }
@@ -70,4 +82,28 @@
   100% {
     transform: rotate(0deg);
   }
+}
+
+.particle {
+	position: absolute;
+ 	border-radius: 50%;
+}
+
+@for $i from 1 through 30 {
+	@keyframes particle-animation-#{$i} {
+		100% {
+			transform: translate3d((random(90) * 1vw), (random(90) * 1vh), (random(100) * 1px));
+		}
+	}
+	
+	.particle:nth-child(#{$i}){
+		animation: particle-animation-#{$i} 20s infinite;
+		$size: random(15) + 5 + px;
+		opacity: random(100)/100;
+		height: $size;
+		width: $size;
+		animation-delay: -$i * .2s;
+		transform: translate3d((random(90) * 1vw), (random(90) * 1vh), (random(100) * 1px));
+		background: hsl(random(360), 70%, 50%);
+	}
 }
