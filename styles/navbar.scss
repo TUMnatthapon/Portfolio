@@ -1,5 +1,6 @@
 :root {
   --brown-color: rgb(87, 23, 23);
+  --dark-gray-color: rgb(13, 12, 12);
 }
 
 .header {
@@ -22,7 +23,7 @@
     padding: 0 10px;
     cursor: pointer;
     a {
-      color: #0c0c0c;
+      color: var(--dark-gray-color);
       text-decoration: none;
     }
   }
@@ -39,7 +40,7 @@
       padding: 8px 20px;
       line-height: 50px;
       font-size: 15px;
-      color: #0c0c0c;
+      color: var(--dark-gray-color);
       text-decoration: none;
       &::before {
         content: "";
@@ -68,6 +69,12 @@
 }
 
 @media only screen and (max-width: 1000px) {
+  *::-webkit-scrollbar {
+    display: none;
+  }
+  body{
+    overflow: none;
+  }
   .menu-mobile {
     display: block;
     margin-right: 10px;
