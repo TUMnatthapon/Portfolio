@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { MenuOutlined, CloseCircleOutlined } from "@ant-design/icons";
 import { useState } from "react";
 
 const Header = () => {
@@ -28,11 +27,23 @@ const Header = () => {
               <Link href="/experience">Experience</Link>
             </li>
             <li className="menu--link" onClick={() => setMenu(!menu)}>
-              <Link href="/contact">Contact Me</Link>
+              <Link href="/contact">Contact</Link>
             </li>
           </ul>
           <div className="menu-mobile" onClick={() => setMenu(!menu)}>
-            {menu ? <MenuOutlined /> : <CloseCircleOutlined />}
+            {menu ? (
+              <div className="hamburger-menu">
+                <div className="bar-top"></div>
+                <div className="bar-middle"></div>
+                <div className="bar-bottom"></div>
+              </div>
+            ) : (
+              <div className="hamburger-menu --active">
+                <div className="bar-top"></div>
+                <div className="bar-middle"></div>
+                <div className="bar-bottom"></div>
+              </div>
+            )}
           </div>
         </div>
       </div>

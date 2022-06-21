@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { DownCircleOutlined } from "@ant-design/icons";
 import Background from "../components/Animation";
+import About from "./about";
 
 const Home = () => {
   return (
@@ -36,6 +37,7 @@ const Home = () => {
           />
         </div>
       </div>
+      <About />
     </>
   );
 };
