@@ -1,5 +1,6 @@
 @import "./navbar.scss";
 @import "./home.scss";
+@import "./about.scss";
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 
 body {
@@ -12,6 +13,13 @@ body {
   padding-left: 100px;
   padding-right: 100px;
   margin: 0 auto;
+}
+
+@media only screen and (max-width: 1000px) {
+  .content-page {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 
 *::-webkit-scrollbar {

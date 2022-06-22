@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { DownCircleOutlined } from "@ant-design/icons";
 import Background from "../components/Animation";
-import About from "./about";
 
 const Home = () => {
   return (
@@ -10,13 +9,13 @@ const Home = () => {
       <Background />
       <div className="home-content">
         <div className="home-content--greeting">
-          HI ALL , I&rsquo;M TUM . . .
-          <span className="wave-emoji">
+          HI ALL , I&rsquo;M TUM <span className="hide">. . .</span>
+          <span className="wave-emoji hide">
             <Image src="/hello.png" alt="👋" width={50} height={50} />
           </span>
           <div>
             NATTHAPON
-            <span className="home-content--font-color"> CHUAISENG</span>
+            <span className="brown-color"> CHUAISENG</span>
           </div>
           <div className="home-content--font-bachelor">
             Bachelor&rsquo;s degree of Engineering in Computer Engineering
@@ -37,7 +36,6 @@ const Home = () => {
           />
         </div>
       </div>
-      <About />
     </>
   );
 };

@@ -41,6 +41,9 @@
         font-size: 15px;
         color: var(--dark-gray-color);
         text-decoration: none;
+        & a.is-active {
+          border-bottom: solid 3px var(--brown-color);
+        }
         &::before {
           content: "";
           transition: 300ms;
@@ -97,9 +100,6 @@
 }
 
 @media only screen and (max-width: 1000px) {
-  *::-webkit-scrollbar {
-    display: none;
-  }
   .menu-mobile {
     display: block;
   }
@@ -110,25 +110,29 @@
     }
     .menu {
       display: flex;
-      position: absolute;
       flex-direction: column;
-      display: none;
+      position: absolute;
+      top: 44px;
+      width: 100%;
+      height: auto;
+      background-color: white;
+      padding-left: 18px;
+      visibility: hidden;
+      opacity: 0;
+      transition: all 0.5s;
       &.--active {
-        display: block;
-        top: 44px;
-        width: 100%;
-        height: auto;
-        background-color: white;
-        padding-left: 18px;
+        visibility: visible;
+        opacity: 1;
+        transition: all 0.5s;
       }
-      &--link {
+      li {
         padding: 0px 40px;
-      }
-      li a {
-        &:hover {
-          color: var(--brown-color);
-          &::before {
-            width: 18%;
+        a {
+          &:hover {
+            color: var(--brown-color);
+            &::before {
+              width: 18%;
+            }
           }
         }
       }
