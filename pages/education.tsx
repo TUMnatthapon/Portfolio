@@ -5,9 +5,9 @@ const Education = () => {
     <>
       <div id="education">&nbsp;</div>
       <div className="content-page">
-        <h1>
-          <BookOutlined /> Education{" "}
-        </h1>
+      <div className="titile-page">
+          <BookOutlined /> Education
+        </div>
         <div className="about--paragraph">
           <span className="left">I&rsquo;m a new graduate,</span> Prince of
           Songkla University Phuket Campus from the Faculty of Engineering in

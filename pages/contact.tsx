@@ -5,7 +5,7 @@ const Contact = () => {
     <>
       <div id="contact">&nbsp;</div>
       <div className="content-page">
-        <h1>Contact Me</h1>
+      <div className="titile-page">Contact Me</div>
         <div className="about--paragraph">
           <span className="left">I&rsquo;m a new graduate,</span> Prince of
           Songkla University Phuket Campus from the Faculty of Engineering in

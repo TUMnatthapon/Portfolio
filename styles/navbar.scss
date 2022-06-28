@@ -1,6 +1,10 @@
 :root {
-  --brown-color: rgb(87, 23, 23);
+  --theme-color: rgb(87, 23, 23);
   --dark-gray-color: rgb(13, 12, 12);
+}
+
+.nav__link--active {
+  color: green;
 }
 
 .header {
@@ -42,19 +46,19 @@
         color: var(--dark-gray-color);
         text-decoration: none;
         & a.is-active {
-          border-bottom: solid 3px var(--brown-color);
+          border-bottom: solid 3px var(--theme-color);
         }
         &::before {
           content: "";
           transition: 300ms;
           height: 3px;
           position: absolute;
-          background-color: var(--brown-color);
+          background-color: var(--theme-color);
           width: 0%;
           bottom: 15px;
         }
         &:hover {
-          color: var(--brown-color);
+          color: var(--theme-color);
           &::before {
             width: 70%;
           }
@@ -129,7 +133,7 @@
         padding: 0px 40px;
         a {
           &:hover {
-            color: var(--brown-color);
+            color: var(--theme-color);
             &::before {
               width: 18%;
             }

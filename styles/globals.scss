@@ -1,8 +1,11 @@
 @import "./navbar.scss";
 @import "./home.scss";
 @import "./about.scss";
+@import "./skills.scss";
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Poppins";
   padding: 0;
@@ -13,6 +16,7 @@ body {
   padding-left: 100px;
   padding-right: 100px;
   margin: 0 auto;
+  margin-top: 50px;
 }
 
 @media only screen and (max-width: 1000px) {

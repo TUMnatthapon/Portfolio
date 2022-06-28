@@ -20,7 +20,7 @@ const Home = () => {
           <div className="home-content--font-bachelor">
             Bachelor&rsquo;s degree of Engineering in Computer Engineering
           </div>
-          <Link href="/about">
+          <Link href="#about">
             <a className="button-style">
               About Me <DownCircleOutlined />
             </a>

@@ -5,9 +5,9 @@ const Experience = () => {
     <>
       <div id="experience">&nbsp;</div>
       <div className="content-page">
-        <h1>
+      <div className="titile-page">
           <IdcardOutlined /> Experience
-        </h1>
+        </div>
         <div className="about--paragraph">
           <span className="left">I&rsquo;m a new graduate,</span> Prince of
           Songkla University Phuket Campus from the Faculty of Engineering in
