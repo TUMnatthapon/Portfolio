@@ -3,10 +3,6 @@
   --dark-gray-color: rgb(13, 12, 12);
 }
 
-.nav__link--active {
-  color: green;
-}
-
 .header {
   max-width: auto;
   background-color: rgb(255, 255, 255);
@@ -45,9 +41,6 @@
         font-size: 15px;
         color: var(--dark-gray-color);
         text-decoration: none;
-        & a.is-active {
-          border-bottom: solid 3px var(--theme-color);
-        }
         &::before {
           content: "";
           transition: 300ms;

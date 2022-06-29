@@ -1,4 +1,5 @@
-import { UserOutlined } from "@ant-design/icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 
 const About = () => {
@@ -8,7 +9,7 @@ const About = () => {
       <div className="content-page">
         <div className="about">
           <div className="titile-page">
-            <UserOutlined /> About <span className="brown-color">Me</span>
+          <FontAwesomeIcon icon={faUser} /> About <span className="brown-color">Me</span>
           </div>
           <div className="about--wrapper">
             <div>

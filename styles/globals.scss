@@ -2,6 +2,8 @@
 @import "./home.scss";
 @import "./about.scss";
 @import "./skills.scss";
+@import "./education.scss";
+@import "./contact.scss";
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 html {
   scroll-behavior: smooth;
@@ -13,8 +15,8 @@ body {
 }
 
 .content-page {
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 200px;
+  padding-right: 200px;
   margin: 0 auto;
   margin-top: 50px;
 }

@@ -1,42 +1,65 @@
-import { CodeOutlined } from "@ant-design/icons";
+import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLine } from "@fortawesome/free-brands-svg-icons";
+import {
+  faCircleChevronRight,
+  faPhone,
+  faEnvelope,
+  faLocationDot,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Contact = () => {
   return (
     <>
-      <div id="contact">&nbsp;</div>
-      <div className="content-page">
-      <div className="titile-page">Contact Me</div>
-        <div className="about--paragraph">
-          <span className="left">I&rsquo;m a new graduate,</span> Prince of
-          Songkla University Phuket Campus from the Faculty of Engineering in
-          Computer Engineering. I&rsquo;m a person who likes challenges and is
-          always enthusiastic. Responsible for work and always ready to learn in
-          the future, I intend to be a Front-end developer because I have the
-          ability and determination in computer programming.
+      <div className="contact">
+        <div className="area-block">
+          <div className="font-title">Tum&rsquo;s Portfolio</div>
+          <a>Thank you for visiting my personal portfolio website. </a>
         </div>
-        <div className="about--paragraph">
-          <span className="left">I&rsquo;m a new graduate,</span> Prince of
-          Songkla University Phuket Campus from the Faculty of Engineering in
-          Computer Engineering. I&rsquo;m a person who likes challenges and is
-          always enthusiastic. Responsible for work and always ready to learn in
-          the future, I intend to be a Front-end developer because I have the
-          ability and determination in computer programming.
+        <div>
+          <div className="font-title">Contact Info</div>
+          <div className="font-title--wrapper">
+            <FontAwesomeIcon icon={faPhone} />
+            <a>082-729-2284</a>
+          </div>
+          <div className="font-title--wrapper">
+            <FontAwesomeIcon icon={faLine} />
+            <a> ID : tum..ntp</a>
+          </div>
+          <div className="font-title--wrapper">
+            <FontAwesomeIcon icon={faEnvelope} />
+            <a>natthapon.tum01@gmail.com</a>
+          </div>
+          <div className="font-title--wrapper">
+            <FontAwesomeIcon icon={faLocationDot} />
+            <a> Phuket, Thailand</a>
+          </div>
         </div>
-        <div className="about--paragraph">
-          <span className="left">I&rsquo;m a new graduate,</span> Prince of
-          Songkla University Phuket Campus from the Faculty of Engineering in
-          Computer Engineering. I&rsquo;m a person who likes challenges and is
-          always enthusiastic. Responsible for work and always ready to learn in
-          the future, I intend to be a Front-end developer because I have the
-          ability and determination in computer programming.
-        </div>
-        <div className="about--paragraph">
-          <span className="left">I&rsquo;m a new graduate,</span> Prince of
-          Songkla University Phuket Campus from the Faculty of Engineering in
-          Computer Engineering. I&rsquo;m a person who likes challenges and is
-          always enthusiastic. Responsible for work and always ready to learn in
-          the future, I intend to be a Front-end developer because I have the
-          ability and determination in computer programming.
+        <div>
+          <ul>
+            <div className="font-title">Quick Links</div>
+            <li>
+              <FontAwesomeIcon icon={faCircleChevronRight} />
+              <Link href="#home">Home</Link>
+            </li>
+            <li>
+              <FontAwesomeIcon icon={faCircleChevronRight} />
+              <Link href="#about">About</Link>
+            </li>
+            <li>
+              <FontAwesomeIcon icon={faCircleChevronRight} />
+              <Link href="#skills">Skills</Link>
+            </li>
+            <li>
+              <FontAwesomeIcon icon={faCircleChevronRight} />
+              <Link href="#education">Education</Link>
+            </li>
+            <li>
+              <FontAwesomeIcon icon={faCircleChevronRight} />
+              <Link href="#experience">Experience</Link>
+            </li>
+          </ul>
+          <div id="contact">&nbsp;</div>
         </div>
       </div>
     </>

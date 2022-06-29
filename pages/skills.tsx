@@ -1,9 +1,9 @@
-import { CodeOutlined } from "@ant-design/icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import IconC from "../components/icon-c";
 import IconCPP from "../components/icon-cpp";
 import IconNextJs from "../components/icon-nextjs";
 import Image from "next/image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLaptopCode } from "@fortawesome/free-solid-svg-icons";
 import {
   faHtml5,
   faCss3Alt,
@@ -12,7 +12,7 @@ import {
   faReact,
   faNode,
   faPython,
-  faBootstrap,
+  faBootstrap
 } from "@fortawesome/free-brands-svg-icons";
 
 const Skills = () => {
@@ -21,7 +21,7 @@ const Skills = () => {
       <div id="skills">&nbsp;</div>
       <div className="content-page">
         <div className="titile-page">
-          <CodeOutlined /> Skills
+        <FontAwesomeIcon icon={faLaptopCode} /> Skills
         </div>
         <div className="skills">
           <div>
@@ -67,7 +67,7 @@ const Skills = () => {
             </li>
             <li>
               <FontAwesomeIcon icon={faBootstrap} size="4x" />
-             <p>Bootstrap</p>
+              <p>Bootstrap</p>
             </li>
             <li>
               <FontAwesomeIcon icon={faPython} size="4x" />

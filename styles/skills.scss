@@ -1,6 +1,5 @@
 .skills{
   display: flex;
-  margin: 50px;
   &--wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -8,7 +7,6 @@
     align-content: center;
     justify-content: center;
     list-style-type: none;
-    
     li {
       color: #666666;
       padding: 20px;
