@@ -1,9 +1,39 @@
 .education {
-  margin: 50px;
-  &--wrapper {
-    margin-top: 50px;
-    align-content: center;
-    justify-content: center;
-    text-align: center;
+  &--card {
+    display: flex;
+    margin: 20px 50px;
+    height: 200px;
+    background-color: #e0d9d9;
+    box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.4);
+    border-radius: 6px;
+    overflow: hidden;
+    &--psu {
+      width: 35%;
+      height: 100%;
+      background-position: center;
+      background-size: cover;
+      background-image: url("/psu2.png");
+    }
+    &--stw {
+      width: 35%;
+      height: 100%;
+      background-position: center;
+      background-size: cover;
+      background-image: url("/stw2.png");
+    }
+    &--text {
+      width: 83%;
+      margin: 32px;
+      .education-name {
+        font-size: 30px;
+      }
+      .education-major {
+        font-size: 20px;
+        margin: 10px 0px;
+      }
+      .education-completed {
+        font-size: 20px;
+      }
+    }
   }
 }

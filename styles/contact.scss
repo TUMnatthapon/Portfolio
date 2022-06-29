@@ -16,7 +16,7 @@
 .contact {
   display: flex;
   justify-content: space-around;
-  background-color: #785555;
+  background-color: #A1572F;
   color: white;
   padding-left: 50px;
   padding-right: 50px;
@@ -44,7 +44,7 @@
         &:hover {
           color: white;
           &::before {
-            width: 70%;
+            width: 100%;
           }
         }
       }
