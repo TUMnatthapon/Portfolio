@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useState } from "react";
 
 const Header = () => {
-  const [menu, setMenu] = useState(true);
+  const [menu, setMenu] = useState(false);
   return (
     <>
       <div id="home" />
@@ -26,6 +26,9 @@ const Header = () => {
               </li>
               <li onClick={() => setMenu(!menu)}>
                 <Link href="#experience">Experience</Link>
+              </li>
+              <li onClick={() => setMenu(!menu)}>
+                <Link href="#certificate">Certificate</Link>
               </li>
               <li onClick={() => setMenu(!menu)}>
                 <Link href="#contact">Contact Me</Link>

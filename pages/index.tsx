@@ -1,4 +1,5 @@
 import About from "./about";
+import Certificate from "./certificate"
 import Contact from "./contact";
 import Education from "./education";
 import Experience from "./experience";
@@ -13,6 +14,7 @@ const App = () => {
       <Skills />
       <Education />
       <Experience />
+      <Certificate />
       <Contact />
     </>
   );
