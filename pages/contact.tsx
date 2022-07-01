@@ -58,6 +58,10 @@ const Contact = () => {
               <FontAwesomeIcon icon={faCircleChevronRight} />
               <Link href="#experience">Experience</Link>
             </li>
+            <li>
+              <FontAwesomeIcon icon={faCircleChevronRight} />
+              <Link href="#certificate">Certificate</Link>
+            </li>
           </ul>
           <div id="contact">&nbsp;</div>
         </div>

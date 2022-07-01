@@ -19,22 +19,23 @@ const Experience = () => {
           />
           <div>
             <input
+              id="one"
               type="button"
               value="Read Paper"
               onClick={() => setPopup(!popup)}
             />
             {popup && (
-              <div className="popup-box">
-                <div className="box">
-                  <FontAwesomeIcon
-                    icon={faXmark}
-                    className="btn-close"
-                    onClick={() => setPopup(!popup)}
-                  />
-                  <div className="clear">
+              <div className="popup">
+                <div className="popup--box">
+                    <FontAwesomeIcon
+                      className="button-close"
+                      icon={faXmark}
+                      onClick={() => setPopup(!popup)}
+                    />
+                  <div className="paper">
                     <iframe
                       src="https://drive.google.com/file/d/1Tdvm2Q8_xVYES0A3XQovflmSe9yVgh_-/preview"
-                      width="640"
+                      width="800"
                       height="480"
                       allow="autoplay"
                     />
