@@ -34,36 +34,40 @@ const Contact = () => {
             <FontAwesomeIcon icon={faLocationDot} />
             <a> Phuket, Thailand</a>
           </div>
+          <div id="contact">&nbsp;</div>
         </div>
         <div>
-          <ul>
-            <div className="font-title">Quick Links</div>
-            <li>
-              <FontAwesomeIcon icon={faCircleChevronRight} />
-              <Link href="#home">Home</Link>
-            </li>
-            <li>
-              <FontAwesomeIcon icon={faCircleChevronRight} />
-              <Link href="#about">About</Link>
-            </li>
-            <li>
-              <FontAwesomeIcon icon={faCircleChevronRight} />
-              <Link href="#skills">Skills</Link>
-            </li>
-            <li>
-              <FontAwesomeIcon icon={faCircleChevronRight} />
-              <Link href="#education">Education</Link>
-            </li>
-            <li>
-              <FontAwesomeIcon icon={faCircleChevronRight} />
-              <Link href="#experience">Experience</Link>
-            </li>
-            <li>
-              <FontAwesomeIcon icon={faCircleChevronRight} />
-              <Link href="#certificate">Certificate</Link>
-            </li>
+          <div className="font-title">Quick Links</div>
+          <ul className="wrapper-links">
+            <div>
+              <li>
+                <FontAwesomeIcon icon={faCircleChevronRight} />
+                <Link href="#home">Home</Link>
+              </li>
+              <li>
+                <FontAwesomeIcon icon={faCircleChevronRight} />
+                <Link href="#about">About</Link>
+              </li>
+              <li>
+                <FontAwesomeIcon icon={faCircleChevronRight} />
+                <Link href="#skills">Skills</Link>
+              </li>
+            </div>
+            <div>
+              <li>
+                <FontAwesomeIcon icon={faCircleChevronRight} />
+                <Link href="#education">Education</Link>
+              </li>
+              <li>
+                <FontAwesomeIcon icon={faCircleChevronRight} />
+                <Link href="#experience">Experience</Link>
+              </li>
+              <li>
+                <FontAwesomeIcon icon={faCircleChevronRight} />
+                <Link href="#certificate">Certificate</Link>
+              </li>
+            </div>
           </ul>
-          <div id="contact">&nbsp;</div>
         </div>
       </div>
     </>

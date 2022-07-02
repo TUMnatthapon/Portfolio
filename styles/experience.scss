@@ -1,105 +1,93 @@
 :root {
-  --surface-color:#fff;
+/*   --background-block: rgb(219, 208, 208); */
+  --background-block: rgb(255, 255, 255);
 }
 
 .experience {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: flex;
   gap: 30px;
-  margin: 40px 5vw;
+  margin: 25px;
   padding: 0;
 }
 
 .card {
-  box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.4);
+  box-shadow: 4px 8px 16px -8px rgba(0, 0, 0, 0.4);
   position: relative;
   display: block;
   height: 100%;
   border-radius: 40px;
   overflow: hidden;
   text-decoration: none;
+  &--overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    border-radius: 40px;
+    background-color: var(--background-block);
+    transform: translateY(100%);
+    transition: 0.2s ease-in-out;
+  }
+  &--header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    padding: 2em;
+    border-radius: 40px 0 0 0;
+    background-color: var(--background-block);
+    transform: translateY(-100%);
+    transition: 0.2s ease-in-out;
+  }
+  &:hover .card--overlay {
+    transform: translateY(0);
+    .card--header {
+      transform: translateY(0);
+    }
+  }
 }
 
-.card__image {
-  width: 100%;
-  height: auto;
-}
-
-.card__overlay {
+.curve {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-  border-radius: 40px;
-  background-color: var(--surface-color);
-  transform: translateY(100%);
-  transition: .2s ease-in-out;
-}
-
-.card:hover .card__overlay {
-  transform: translateY(0);
-}
-
-.card__header {
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 2em;
-  padding: 2em;
-  border-radius: 40px 0 0 0;
-  background-color: var(--surface-color);
-  transform: translateY(-100%);
-  transition: .2s ease-in-out;
-}
-
-.card__arc {
   width: 80px;
   height: 80px;
-  position: absolute;
-  bottom: 100%;
+  bottom: 99%;
   right: 0;
   z-index: 1;
   path {
-    fill: var(--surface-color);
-    d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
-  }       
+    fill: var(--background-block);
+  }
 }
 
-.card:hover .card__header {
-  transform: translateY(0);
-}
-
-.card__thumb {
-  inset:0;
-  flex-shrink: 0;
-  width: 50px;
-  height: 50px;
+.circle {
   border-radius: 50%;
 }
 
-.card__title {
-  font-size: 1em;
-  margin: 0 0 .3em;
-  color: #6A515E;
+.text {
+  color: #6a515e;
+  &--title {
+    font-size: 20px;
+    margin: 0 0 5px;
+  }
+  &--status {
+    font-size: 16px;
+  }
 }
 
-.card__tagline {
-  display: block;
-  margin: 1em 0;
-  font-family: "MockFlowFont";
-  font-size: .8em;
-  color: #6A515E;
-}
-
-.card__status {
-  font-size: .9em;
-  color: #6A515E;
-}
-
-.card__description {
-  padding: 0 3em 2em ;
+.des {
+  padding: 0 40px 30px;
   margin: 0;
-  color: #6A515E;
-  font-size: 14px;
+  color: #6a515e;
+  font-size: 15px;
+  &--gap {
+    padding-left: 15px;
+  }
+  &--seemore {
+    cursor: pointer;
+    padding-left: 5px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: var(--theme-color);
+  }
 }

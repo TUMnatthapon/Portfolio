@@ -1,78 +1,104 @@
 import Image from "next/image";
 import profilePic from "../public/profile-home.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react";
 
 const Experience = () => {
+  const [detailsPJ, setDetailsPJ] = useState(false);
+  const [detailsMini, setDetailsMini] = useState(false);
   return (
     <>
       <div id="experience">&nbsp;</div>
       <div className="content-page">
         <div className="titile-page">My University Experience</div>
         <div className="experience">
-          <div>
-            <a href="" className="card">
-              <Image
-                className="card__image"
-                src={profilePic}
-                alt="profile-home"
-              />
-              <div className="card__overlay">
-                <div className="card__header">
-                  <svg className="card__arc" xmlns="http://www.w3.org/2000/svg">
-                    <path />
-                  </svg>
-                  <Image
-                    className="card__thumb"
-                    src={profilePic}
-                    alt="profile-home"
-                    width={50}
-                    height={50}
-                  />
-                  <div className="card__header-text">
-                    <h3 className="card__title">Project</h3>
-                    <span className="card__status">Smart IP Camera</span>
-                  </div>
+          <div className="card">
+            <Image src={profilePic} alt="profile-home" />
+            <div className="card--overlay">
+              <div className="card--header">
+                <svg className="curve" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M 40 80 c 22 0 40 -22 40 -40 v 40 Z" />
+                </svg>
+                <Image
+                  className="circle"
+                  src={profilePic}
+                  alt="profile-home"
+                  width={50}
+                  height={50}
+                />
+                <div className="text">
+                  <h3 className="text--title">Project</h3>
+                  <span className="text--status">Smart IP Camera</span>
                 </div>
-                <p className="card__description">
-                  This under graduated project is about the face and object
-                  detection with deep learning technique. This project will be
-                  used in home CCTV cameras to secure the house. If detected
-                  object is instantly recorded and notified to Line application.
-                </p>
               </div>
-            </a>
+              <p className="des">
+                <span className="des--gap" />
+                This project is about the face and object
+                detection with deep learning technique. This project will be
+                used in home CCTV camera to secure the house. If detected object
+                is instantly recorded and notified to Line application.
+                <span className="des--seemore" onClick={() => setDetailsPJ(!detailsPJ)}>See more</span>
+              </p>
+            </div>
+            {detailsPJ && (
+              <div className="popup">
+                <div className="popup--box">
+                  <FontAwesomeIcon
+                    className="button-close"
+                    icon={faXmark}
+                    onClick={() => setDetailsPJ(!detailsPJ)}
+                  />
+                  <div className="paper">A</div>
+                </div>
+              </div>
+            )}
           </div>
-          <div>
-            <a href="" className="card">
-              <Image
-                className="card__image"
-                src={profilePic}
-                alt="profile-home"
-              />
-              <div className="card__overlay">
-                <div className="card__header">
-                  <svg className="card__arc" xmlns="http://www.w3.org/2000/svg">
-                    <path />
-                  </svg>
-                  <Image
-                    className="card__thumb"
-                    src={profilePic}
-                    alt="profile-home"
-                    width={50}
-                    height={50}
-                  />
-                  <div className="card__header-text">
-                    <h3 className="card__title">Mini Project</h3>
-                    <span className="card__status">
-                      E-commerce ( Sneakers Shop )
-                    </span>
-                  </div>
+          <div className="card">
+            <Image src={profilePic} alt="profile-home" />
+            <div className="card--overlay">
+              <div className="card--header">
+                <svg className="curve" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M 40 80 c 22 0 40 -22 40 -40 v 40 Z" />
+                </svg>
+                <Image
+                  className="circle"
+                  src={profilePic}
+                  alt="profile-home"
+                  width={50}
+                  height={50}
+                />
+                <div className="text">
+                  <h3 className="text--title">Mini Project</h3>
+                  <span className="text--status">
+                    E-commerce ( Sneakers Shop )
+                  </span>
                 </div>
-                <p className="card__description">
-                  This project is about website E-commerce for Distributed
-                  Computing and Web Technologies subject .
-                </p>
               </div>
-            </a>
+              <p className="des">
+                <span className="des--gap" />
+                This project is about website E-commerce for Distributed
+                Computing and Web Technologies subject.
+                <span
+                  className="des--seemore"
+                  onClick={() => setDetailsMini(!detailsMini)}
+                >
+                  See more
+                </span>
+              </p>
+            </div>
+            {detailsMini && (
+              <div className="popup">
+                <div className="popup--box">
+                  <FontAwesomeIcon
+                    className="button-close"
+                    icon={faXmark}
+                    onClick={() => setDetailsMini(!detailsMini)}
+                  />
+                  <div className="paper">B</div>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </div>

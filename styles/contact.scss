@@ -13,6 +13,10 @@
   }
 }
 
+.wrapper-links{
+  display: flex;
+}
+
 .contact {
   display: flex;
   justify-content: space-around;
@@ -27,6 +31,7 @@
       position: relative;
       list-style-type: none;
       margin: 10px;
+      margin-top: 0;
       a {
         margin: 10px;
         color: white;
