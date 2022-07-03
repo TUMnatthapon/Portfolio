@@ -11,15 +11,14 @@ const Experience = () => {
       <div className="content-page">
         <div className="certificate">
           <div className="titile-page">Certificate</div>
-          <Image
-            src="https://drive.google.com/uc?export=view&id=1ItS2Ok9DKpDnS4c0DEwPiVT1e8bWRNBX"
-            alt="👋"
-            width={500}
-            height={350}
-          />
+            <Image 
+              src="https://drive.google.com/uc?export=view&id=1ItS2Ok9DKpDnS4c0DEwPiVT1e8bWRNBX"
+              alt="👋"
+              width={700}
+              height={500}
+            />
           <div>
             <input
-              id="one"
               type="button"
               value="Read Paper"
               onClick={() => setPopup(!popup)}
@@ -27,16 +26,14 @@ const Experience = () => {
             {popup && (
               <div className="popup">
                 <div className="popup--box">
-                    <FontAwesomeIcon
-                      className="button-close"
-                      icon={faXmark}
-                      onClick={() => setPopup(!popup)}
-                    />
+                  <FontAwesomeIcon
+                    className="button-close"
+                    icon={faXmark}
+                    onClick={() => setPopup(!popup)}
+                  />
                   <div className="paper">
                     <iframe
                       src="https://drive.google.com/file/d/1Tdvm2Q8_xVYES0A3XQovflmSe9yVgh_-/preview"
-                      width="800"
-                      height="480"
                       allow="autoplay"
                     />
                   </div>

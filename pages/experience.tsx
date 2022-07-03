@@ -3,6 +3,7 @@ import profilePic from "../public/profile-home.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
+import SliderMiniPJ from "../components/SliderMiniPJ";
 
 const Experience = () => {
   const [detailsPJ, setDetailsPJ] = useState(false);
@@ -34,11 +35,16 @@ const Experience = () => {
               </div>
               <p className="des">
                 <span className="des--gap" />
-                This project is about the face and object
-                detection with deep learning technique. This project will be
-                used in home CCTV camera to secure the house. If detected object
-                is instantly recorded and notified to Line application.
-                <span className="des--seemore" onClick={() => setDetailsPJ(!detailsPJ)}>See more</span>
+                This project is about the face and object detection with deep
+                learning technique. This project will be used in home CCTV
+                camera to secure the house. If detected object is instantly
+                recorded and notified to Line application.
+                <span
+                  className="des--seemore"
+                  onClick={() => setDetailsPJ(!detailsPJ)}
+                >
+                  See more
+                </span>
               </p>
             </div>
             {detailsPJ && (
@@ -49,7 +55,39 @@ const Experience = () => {
                     icon={faXmark}
                     onClick={() => setDetailsPJ(!detailsPJ)}
                   />
-                  <div className="paper">A</div>
+                  <div className="Popup-wrapper">
+                    <Image
+                      src="/Project-1.png"
+                      alt="Project-1"
+                      width={350}
+                      height={200}
+                    />
+                    <Image
+                      src="/Project-2.png"
+                      alt="Project-2"
+                      width={350}
+                      height={200}
+                    />
+                    <Image
+                      src="/Project-3.png"
+                      alt="Project-3"
+                      width={350}
+                      height={200}
+                    />
+                    <div>
+                      <div>Languages </div>
+                      <li>Python</li>
+                      <li>JavaScript</li>
+                      <li>HTML</li>
+                      <li>CSS</li>
+                      <div>Frameworks </div>
+                      <li>Flask</li>
+                      <div>Model </div>
+                      <li> Face Detection : Fast R-CNN Face</li>
+                      <li>Face Recognition: Face-API</li>
+                      <li>Object Detection:SSD Mobilenet V1</li>
+                    </div>
+                  </div>
                 </div>
               </div>
             )}
@@ -95,7 +133,19 @@ const Experience = () => {
                     icon={faXmark}
                     onClick={() => setDetailsMini(!detailsMini)}
                   />
-                  <div className="paper">B</div>
+                  <div className="Popup-wrapper">
+                  <SliderMiniPJ />
+                    <div>
+                      <div>Languages </div>
+                      <li>JavaScript</li>
+                      <li>HTML</li>
+                      <li>CSS</li>
+                      <div>Frameworks </div>
+                      <li>React</li>
+                      <div>Database </div>
+                      <li>Firebase</li>
+                    </div>
+                  </div>
                 </div>
               </div>
             )}
