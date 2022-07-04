@@ -7,7 +7,7 @@ const Education = () => {
       <div id="education">&nbsp;</div>
       <div className="content-page">
         <div className="titile-page">
-          <FontAwesomeIcon icon={faGraduationCap} /> My Education
+          <FontAwesomeIcon icon={faGraduationCap} /> My <span className="brown-color">Education</span>
         </div>
         <div className="education">
           <div className="education--card">

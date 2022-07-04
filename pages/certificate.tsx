@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faXmark } from "@fortawesome/free-solid-svg-icons";
+import { faXmark, faScroll } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 
 const Experience = () => {
@@ -10,19 +10,21 @@ const Experience = () => {
       <div id="certificate">&nbsp;</div>
       <div className="content-page">
         <div className="certificate">
-          <div className="titile-page">Certificate</div>
-            <Image 
+          <div className="titile-page">
+            <FontAwesomeIcon icon={faScroll} /> Certificate
+          </div>
+          <div className="cer">
+            <Image
               src="https://drive.google.com/uc?export=view&id=1ItS2Ok9DKpDnS4c0DEwPiVT1e8bWRNBX"
               alt="👋"
               width={700}
               height={500}
             />
+            <div className="read-more" onClick={() => setPopup(!popup)}>
+              Read Paper
+            </div>
+          </div>
           <div>
-            <input
-              type="button"
-              value="Read Paper"
-              onClick={() => setPopup(!popup)}
-            />
             {popup && (
               <div className="popup">
                 <div className="popup--box">

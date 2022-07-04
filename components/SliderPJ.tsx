@@ -7,13 +7,13 @@ const ImageSlider = () => {
 
   const SliderData = [
     {
-      image: "/mini-1.png",
+      image: "/project-1.png",
     },
     {
-      image: "/mini-2.png",
+      image: "/project-2.png",
     },
     {
-      image: "/mini-3.png",
+      image: "/project-3.png",
     },
   ];
 
