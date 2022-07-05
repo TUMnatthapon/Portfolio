@@ -1,5 +1,5 @@
 .certificate {
-  text-align: center ;
+  text-align: center;
 }
 
 .popup {
@@ -70,11 +70,12 @@ iframe {
     border-radius: 12px 12px 0 0;
     transition: background-color 0.4s ease-in-out;
     &:hover {
-     background-color: #6e2020;
+      background-color: #6e2020;
+      bottom: 2px;
+      box-shadow: 0px 5px 10px -4px rgba(0, 0, 0, 0.3);
     }
   }
 }
-
 
 @keyframes unfoldIn {
   0% {
@@ -87,16 +88,3 @@ iframe {
     transform: scaleY(1) scaleX(1);
   }
 }
-
-@keyframes unfoldOut {
-  0% {
-    transform: scaleY(1) scaleX(1);
-  }
-  50% {
-    transform: scaleY(0.005) scaleX(1);
-  }
-  100% {
-    transform: scaleY(0.005) scaleX(0);
-  }
-}
-

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import profilePic from "../public/profile-home.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faXmark } from "@fortawesome/free-solid-svg-icons";
+import { faXmark, faBriefcase } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import SliderMiniPJ from "../components/SliderMiniPJ";
 import SliderPJ from "../components/SliderPJ";
@@ -13,7 +13,9 @@ const Experience = () => {
     <>
       <div id="experience">&nbsp;</div>
       <div className="content-page">
-        <div className="titile-page">My University Experience</div>
+        <div className="titile-page">
+          <FontAwesomeIcon icon={faBriefcase} /> My University Experience
+        </div>
         <div className="experience">
           <div className="card">
             <Image src={profilePic} alt="profile-home" />
@@ -24,8 +26,8 @@ const Experience = () => {
                 </svg>
                 <Image
                   className="circle"
-                  src={profilePic}
-                  alt="profile-home"
+                  src="https://www.fms.psu.ac.th/wp-content/uploads/2020/03/PSU-Logo.png"
+                  alt="psu"
                   width={50}
                   height={50}
                 />
@@ -35,7 +37,7 @@ const Experience = () => {
                 </div>
               </div>
               <p className="des">
-                <span className="des--gap" />
+                <span className="gap" />
                 This project is about the face and object detection with deep
                 learning technique. This project will be used in home CCTV
                 camera to secure the house. If detected object is instantly
@@ -91,8 +93,8 @@ const Experience = () => {
                 </svg>
                 <Image
                   className="circle"
-                  src={profilePic}
-                  alt="profile-home"
+                  src="https://www.fms.psu.ac.th/wp-content/uploads/2020/03/PSU-Logo.png"
+                  alt="psu"
                   width={50}
                   height={50}
                 />
@@ -104,7 +106,7 @@ const Experience = () => {
                 </div>
               </div>
               <p className="des">
-                <span className="des--gap" />
+                <span className="gap" />
                 This project is about website E-commerce for Distributed
                 Computing and Web Technologies subject.
                 <span

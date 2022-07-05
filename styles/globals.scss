@@ -23,6 +23,16 @@ body {
   margin-top: 50px;
 }
 
+.brown-color {
+  color: var(--theme-color);
+}
+
+.titile-page {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+
 @media only screen and (max-width: 1000px) {
   .content-page {
     padding-left: 50px;

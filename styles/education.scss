@@ -3,8 +3,8 @@
     display: flex;
     margin: 20px 50px;
     height: 200px;
-    background-color: #e0d9d9;
-    box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.4);
+    background-color: var(--background-block);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 6px;
     overflow: hidden;
     &--psu {
@@ -22,6 +22,7 @@
       background-image: url("/stw2.png");
     }
     &--text {
+      color: #6c4d5d;
       width: 83%;
       margin: 32px;
       .education-name {
