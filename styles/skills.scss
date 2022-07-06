@@ -1,5 +1,7 @@
 .skills{
-  display: flex;
+  margin: 50px;
+  margin-bottom: 0;
+  text-align: center;
   &--wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -25,3 +27,4 @@
     fill: var(--theme-color);
   }
 }
+
