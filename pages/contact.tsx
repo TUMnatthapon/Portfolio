@@ -13,7 +13,7 @@ const Contact = () => {
     <>
       <div className="contact">
         <div className="area-block">
-          <div className="font-title">Tum&rsquo;s Portfolio</div>
+          <div className="font-title">Tum Portfolio</div>
           <a>Thank you for visiting my personal portfolio website. </a>
         </div>
         <div>
@@ -60,7 +60,7 @@ const Contact = () => {
               </li>
               <li>
                 <FontAwesomeIcon icon={faCircleChevronRight} />
-                <Link href="#experience">Experience</Link>
+                <Link href="#experience">Portfolio</Link>
               </li>
               <li>
                 <FontAwesomeIcon icon={faCircleChevronRight} />

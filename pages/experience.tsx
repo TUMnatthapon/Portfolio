@@ -14,7 +14,7 @@ const Experience = () => {
       <div id="experience">&nbsp;</div>
       <div className="content-page">
         <div className="titile-page">
-          <FontAwesomeIcon icon={faBriefcase} /> My University Experience
+          <FontAwesomeIcon icon={faBriefcase} /> My <span className="brown-color">Portfolio</span>
         </div>
         <div className="experience">
           <div className="card">

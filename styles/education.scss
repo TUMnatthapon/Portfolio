@@ -1,40 +1,59 @@
-.education {
-  &--card {
-    display: flex;
-    margin: 20px 50px;
-    height: 200px;
-    background-color: var(--background-block);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 6px;
-    overflow: hidden;
-    &--psu {
-      width: 35%;
-      height: 100%;
-      background-position: center;
-      background-size: cover;
-      background-image: url("/psu2.png");
-    }
-    &--stw {
-      width: 35%;
-      height: 100%;
-      background-position: center;
-      background-size: cover;
-      background-image: url("/stw2.png");
-    }
-    &--text {
-      color: #6c4d5d;
-      width: 83%;
-      margin: 32px;
-      .education-name {
-        font-size: 30px;
-      }
-      .education-major {
-        font-size: 20px;
-        margin: 10px 0px;
-      }
-      .education-completed {
-        font-size: 20px;
-      }
-    }
+.education{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  &--block{
+    position: relative;
+    bottom: 50px;
   }
+	&--content{
+		position: relative;
+		padding: 16px 16px 16px 64px;
+		&--title{
+			font-size: 28px;
+      letter-spacing: 1px;
+      &:hover{
+        color: var(--light-brown-color);
+        cursor: pointer;
+      }
+		}
+		p{
+			color: #212121;
+			font-size: 18px;
+      letter-spacing: 0.5px;
+			margin-block-start: 0px;
+			margin-block-end: 4px;
+		}
+		.dot{
+			position: absolute;
+			content: "";
+			width: 32px;
+			height: 32px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 10px;
+			color: #fff;
+			border-radius: 50%;
+			background-color: var(--light-brown-color);
+			box-shadow: inset 0 0 0 1px #fff;
+			border: 1px solid var(--light-brown-color);
+			left: 16px;
+			top: 21px;
+      z-index: 2;
+		}
+    &:before{
+      position: absolute;
+      content: "";
+      width: 4px;
+      background-color: var(--light-brown-color);
+      left: 30px;
+      top: 25px;
+      bottom: -40%;
+      z-index: 1;
+    }
+	}
 }
+
+

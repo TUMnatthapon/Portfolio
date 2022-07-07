@@ -25,7 +25,7 @@ const Header = () => {
                 <Link href="#education">Education</Link>
               </li>
               <li onClick={() => setMenu(!menu)}>
-                <Link href="#experience">Experience</Link>
+                <Link href="#experience">Portfolio</Link>
               </li>
               <li onClick={() => setMenu(!menu)}>
                 <Link href="#certificate">Certificate</Link>

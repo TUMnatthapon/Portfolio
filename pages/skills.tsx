@@ -20,10 +20,10 @@ const Skills = () => {
   return (
     <>
       <div id="skills">&nbsp;</div>
-      <div className="skills">
-        <div className="titile-page">
+      <div className="titile-page">
           <FontAwesomeIcon icon={faLaptopCode} /> Skills
         </div>
+      <div className="skills">
         <div>
           <Image src={ComputerPic} alt="Photo" />
         </div>

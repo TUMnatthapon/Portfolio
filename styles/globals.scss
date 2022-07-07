@@ -9,11 +9,13 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 html {
   scroll-behavior: smooth;
+  /* background-color: #f6f6f6; */
 }
 body {
   font-family: "Poppins";
   padding: 0;
   margin: 0;
+  cursor: context-menu;
 }
 
 .content-page {
@@ -24,6 +26,10 @@ body {
 
 .brown-color {
   color: var(--theme-color);
+}
+
+.light-brown-color{
+  color: var(--light-brown-color);
 }
 
 .titile-page {
