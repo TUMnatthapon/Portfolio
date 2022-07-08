@@ -1,5 +1,36 @@
 .certificate {
-  text-align: center;
+  position: relative;
+  right: 1.1%;
+  &--block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .cer {
+    position: relative;
+    margin: 10px;
+    filter: drop-shadow(2px 2px 6px rgb(200, 197, 197));
+    .read-more {
+      cursor: pointer;
+      position: absolute;
+      transform: translate(-50%, -30%);
+      bottom: 0;
+      left: 50%;
+      color: #fff;
+      background-color: var(--theme-color);
+      letter-spacing: 1px;
+      padding: 2px 30px;
+      font-size: 12px;
+      border-radius: 12px 12px 0 0;
+      transition: background-color 0.4s ease-in-out;
+      &:hover {
+        background-color: #6e2020;
+        bottom: 2px;
+        box-shadow: 0px 5px 10px -4px rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
 }
 
 .popup {
@@ -50,31 +81,6 @@ iframe {
 
 .paper {
   margin: 40px;
-}
-
-.cer {
-  position: relative;
-  margin: 10px;
-  filter: drop-shadow(2px 2px 6px rgb(200, 197, 197));
-  .read-more {
-    cursor: pointer;
-    position: absolute;
-    transform: translate(-50%, -30%);
-    bottom: 0px;
-    left: 50%;
-    color: #fff;
-    background-color: var(--theme-color);
-    letter-spacing: 1px;
-    padding: 2px 30px;
-    font-size: 12px;
-    border-radius: 12px 12px 0 0;
-    transition: background-color 0.4s ease-in-out;
-    &:hover {
-      background-color: #6e2020;
-      bottom: 2px;
-      box-shadow: 0px 5px 10px -4px rgba(0, 0, 0, 0.3);
-    }
-  }
 }
 
 @keyframes unfoldIn {

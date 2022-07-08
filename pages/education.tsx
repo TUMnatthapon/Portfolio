@@ -16,7 +16,9 @@ const Education = () => {
           </div>
           <div className="education--content">
             <div className="education--content--title">
-              Prince of Songkla University, Phuket Campus
+              <a href="https://www.phuket.psu.ac.th">
+                Prince of Songkla University, Phuket Campus
+              </a>
             </div>
             <span className="dot">PSU</span>
             <p>
@@ -25,7 +27,9 @@ const Education = () => {
             <p>2017 - 2022 | Completed </p>
           </div>
           <div className="education--content">
-            <div className="education--content--title">Satunwittaya School</div>
+            <div className="education--content--title">
+              <a href="https://www.stw.ac.th">Satunwittaya School </a>
+            </div>
             <span className="dot">STW</span>
             <p>High school | Science and Mathematics Program</p>
             <p>2011 - 2017 | Completed</p>

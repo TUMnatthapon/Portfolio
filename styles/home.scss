@@ -123,6 +123,9 @@
     *::-webkit-scrollbar {
       display: none;
     }
+    .hide {
+      display: none;
+    }
     .home-content {
       flex-wrap: wrap-reverse;
       justify-content: center;
@@ -132,9 +135,6 @@
       &--greeting {
         font-size: 30px;
         font-weight: bold;
-        .hide {
-          display: none;
-        }
       }
       &--font-bachelor {
         font-size: 23px;

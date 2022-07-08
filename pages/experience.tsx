@@ -1,5 +1,4 @@
 import Image from "next/image";
-import profilePic from "../public/profile-home.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark, faBriefcase } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
@@ -12,43 +11,34 @@ const Experience = () => {
   return (
     <>
       <div id="experience">&nbsp;</div>
-      <div className="content-page">
-        <div className="titile-page">
-          <FontAwesomeIcon icon={faBriefcase} /> My <span className="brown-color">Portfolio</span>
-        </div>
-        <div className="experience">
-          <div className="card">
-            <Image src={profilePic} alt="profile-home" />
-            <div className="card--overlay">
-              <div className="card--header">
-                <svg className="curve" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M 40 80 c 22 0 40 -22 40 -40 v 40 Z" />
-                </svg>
-                <Image
-                  className="circle"
-                  src="https://www.fms.psu.ac.th/wp-content/uploads/2020/03/PSU-Logo.png"
-                  alt="psu"
-                  width={50}
-                  height={50}
-                />
+      <div className="experience">
+        <div className="experience--block">
+          <div className="topic">
+            <FontAwesomeIcon icon={faBriefcase} /> My{" "}
+            <span className="brown-color">Portfolio</span>
+          </div>
+          <div>
+            <div className="card">
+              <div className="card--content">
                 <div className="text">
                   <h3 className="text--title">Project</h3>
                   <span className="text--status">Smart IP Camera</span>
                 </div>
+                <p className="des">
+                  <span className="gap" />
+                  This project is about the face and object detection with deep
+                  learning technique. This project will be used in home CCTV
+                  camera to secure the house. If detected object is instantly
+                  recorded and notified to Line application.
+                  <span
+                    className="des--seemore"
+                    onClick={() => setDetailsPJ(!detailsPJ)}
+                  >
+                    See more
+                  </span>
+                </p>
               </div>
-              <p className="des">
-                <span className="gap" />
-                This project is about the face and object detection with deep
-                learning technique. This project will be used in home CCTV
-                camera to secure the house. If detected object is instantly
-                recorded and notified to Line application.
-                <span
-                  className="des--seemore"
-                  onClick={() => setDetailsPJ(!detailsPJ)}
-                >
-                  See more
-                </span>
-              </p>
+              <div className="card--blob"></div>
             </div>
             {detailsPJ && (
               <div className="popup">
@@ -84,38 +74,28 @@ const Experience = () => {
               </div>
             )}
           </div>
-          <div className="card">
-            <Image src={profilePic} alt="profile-home" />
-            <div className="card--overlay">
-              <div className="card--header">
-                <svg className="curve" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M 40 80 c 22 0 40 -22 40 -40 v 40 Z" />
-                </svg>
-                <Image
-                  className="circle"
-                  src="https://www.fms.psu.ac.th/wp-content/uploads/2020/03/PSU-Logo.png"
-                  alt="psu"
-                  width={50}
-                  height={50}
-                />
+          <div>
+            <div className="card">
+              <div className="card--content">
                 <div className="text">
                   <h3 className="text--title">Mini Project</h3>
                   <span className="text--status">
                     E-commerce ( Sneakers Shop )
                   </span>
                 </div>
+                <p className="des">
+                  <span className="gap" />
+                  This project is about website E-commerce for Distributed
+                  Computing and Web Technologies subject.
+                  <span
+                    className="des--seemore"
+                    onClick={() => setDetailsMini(!detailsMini)}
+                  >
+                    See more
+                  </span>
+                </p>
               </div>
-              <p className="des">
-                <span className="gap" />
-                This project is about website E-commerce for Distributed
-                Computing and Web Technologies subject.
-                <span
-                  className="des--seemore"
-                  onClick={() => setDetailsMini(!detailsMini)}
-                >
-                  See more
-                </span>
-              </p>
+              <div className="card--blob"></div>
             </div>
             {detailsMini && (
               <div className="popup">

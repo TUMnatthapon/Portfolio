@@ -1,92 +1,106 @@
-:root {
-    --background-block: rgb(235, 227, 227);
-/*   --background-block: rgb(255, 255, 255); */
-}
 
 .experience {
-  display: flex;
-  gap: 30px;
-  margin: 25px;
-  padding: 0;
-}
-
-.card {
-  box-shadow: 4px 8px 16px -8px rgba(0, 0, 0, 0.4);
   position: relative;
-  display: block;
-  height: 100%;
-  border-radius: 40px;
-  overflow: hidden;
-  text-decoration: none;
-  &--overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-    border-radius: 40px;
-    background-color: var(--background-block);
-    transform: translateY(100%);
-    transition: 0.2s ease-in-out;
-  }
-  &--header {
-    position: relative;
+  display: flex;
+  margin: 50px;
+  &--block {
     display: flex;
-    align-items: center;
-    gap: 2em;
-    padding: 2em;
-    border-radius: 40px 0 0 0;
-    background-color: var(--background-block);
-    transform: translateY(-100%);
-    transition: 0.2s ease-in-out;
-  }
-  &:hover .card--overlay {
-    transform: translateY(0);
-    .card--header {
-      transform: translateY(0);
+    flex-direction: column;
+    gap: 1em;
+    .topic {
+      font-size: 40px;
+      font-weight: bold;
+      margin-top: 50px;
     }
   }
-}
+  .card {
+    position: relative;
+    background: white;
+    height: 200px;
+    overflow: hidden;
+    box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    transition: 0.8s ease;
+    &--content {
+      position: relative;
+      padding: 1em;
+      max-width: 50%;
+      z-index: 2;
+      .text {
+        color: #212121;
+        &--title {
+          font-size: 20px;
+          margin: 0 0 3px;
+        }
+        &--status {
+          font-size: 16px;
+        }
+      }
+      .des {
+        color: #212121;
+        font-size: 15px;
+        &--seemore {
+          cursor: pointer;
+          padding-left: 5px;
+          font-weight: bold;
+          text-decoration: underline;
+          color: var(--theme-color);
+        }
+      }
+    }
+    &--blob {
+      position: absolute;
+      right: -(160px / 2);
+      top: -(160px / 2);
+      width: (160px * 1.5) * 1.5;
+      height: (160px * 1.5) * 1.5;
+      background: lighten(#571717, 20%);
+      border-radius: 160px + 160px;
+      opacity: 0.8;
+      transition: 0.2s ease;
 
-.curve {
-  position: absolute;
-  width: 80px;
-  height: 80px;
-  bottom: 99%;
-  right: 0;
-  z-index: 1;
-  path {
-    fill: var(--background-block);
-  }
-}
+      &::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: (160px * 1.5);
+        height: (160px * 1.5);
+        background: lighten(#571717, 10%);
+        border-radius: 160px + 160px;
+        opacity: 0.9;
+        transition: 0.25s ease;
+      }
 
-.circle {
-  border-radius: 50%;
-  background-color: white
-}
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 160px;
+        height: 160px;
+        background: #571717;
+        border-radius: 160px + 160px;
+        transition: 0.27s ease;
+      }
+    }
+    &:hover {
+      transform: translateY(-5%);
+      .card--blob {
+        width: ((160px * 1.5) * 1.5) * 1.5;
+        height: ((160px * 1.5) * 1.5) * 1.5;
 
-.text {
-  color: #6a515e;
-  &--title {
-    font-size: 20px;
-    margin: 0 0 3px;
-  }
-  &--status {
-    font-size: 16px;
-  }
-}
+        &::after {
+          width: 160px * 1.5;
+          height: 160px * 1.5;
+        }
 
-.des {
-  padding: 0 40px 30px;
-  margin: 0;
-  color: #6a515e;
-  font-size: 15px;
-  &--seemore {
-    cursor: pointer;
-    padding-left: 5px;
-    font-weight: bold;
-    text-decoration: underline;
-    color: var(--theme-color);
+        &::before {
+          width: (160px * 1.5) * 1.5;
+          height: (160px * 1.5) * 1.5;
+        }
+      }
+    }
   }
 }
 
