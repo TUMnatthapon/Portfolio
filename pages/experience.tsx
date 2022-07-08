@@ -4,6 +4,7 @@ import { faXmark, faBriefcase } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import SliderMiniPJ from "../components/SliderMiniPJ";
 import SliderPJ from "../components/SliderPJ";
+import DevPic from "../public/Dev-pic2.svg";
 
 const Experience = () => {
   const [detailsPJ, setDetailsPJ] = useState(false);
@@ -15,16 +16,16 @@ const Experience = () => {
         <div className="experience--block">
           <div className="topic">
             <FontAwesomeIcon icon={faBriefcase} /> My{" "}
-            <span className="brown-color">Portfolio</span>
+            <span className="light-brown-color">Portfolio</span>
           </div>
           <div>
             <div className="card">
               <div className="card--content">
                 <div className="text">
-                  <h3 className="text--title">Project</h3>
+                  <h4 className="text--title">Project</h4>
                   <span className="text--status">Smart IP Camera</span>
                 </div>
-                <p className="des">
+                <div className="des">
                   <span className="gap" />
                   This project is about the face and object detection with deep
                   learning technique. This project will be used in home CCTV
@@ -36,7 +37,7 @@ const Experience = () => {
                   >
                     See more
                   </span>
-                </p>
+                </div>
               </div>
               <div className="card--blob"></div>
             </div>
@@ -78,12 +79,12 @@ const Experience = () => {
             <div className="card">
               <div className="card--content">
                 <div className="text">
-                  <h3 className="text--title">Mini Project</h3>
+                  <h4 className="text--title">Mini Project</h4>
                   <span className="text--status">
                     E-commerce ( Sneakers Shop )
                   </span>
                 </div>
-                <p className="des">
+                <div className="des">
                   <span className="gap" />
                   This project is about website E-commerce for Distributed
                   Computing and Web Technologies subject.
@@ -93,7 +94,7 @@ const Experience = () => {
                   >
                     See more
                   </span>
-                </p>
+                </div>
               </div>
               <div className="card--blob"></div>
             </div>
@@ -128,6 +129,9 @@ const Experience = () => {
               </div>
             )}
           </div>
+        </div>
+        <div className="a">
+        <Image src={DevPic} alt="Photo" />
         </div>
       </div>
     </>

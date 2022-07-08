@@ -13,8 +13,10 @@ const Experience = () => {
         <div className="titile-page">
           <FontAwesomeIcon icon={faScroll} /> Certificate
         </div>
-        <div className="certificate--block" >
-          <Image src={picLeft} alt="Photo" />
+        <div className="certificate--block">
+          <div className="hide">
+            <Image src={picLeft} alt="Photo" />
+          </div>
           <div className="cer">
             <Image
               src="https://drive.google.com/uc?export=view&id=1ItS2Ok9DKpDnS4c0DEwPiVT1e8bWRNBX"
@@ -26,7 +28,9 @@ const Experience = () => {
               Read Paper
             </div>
           </div>
-          <Image src={picRight} alt="Photo" />
+          <div className="hide">
+            <Image src={picRight} alt="Photo" />
+          </div>
         </div>
         <div>
           {popup && (

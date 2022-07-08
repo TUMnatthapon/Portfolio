@@ -1,8 +1,11 @@
 
 .experience {
-  position: relative;
   display: flex;
-  margin: 50px;
+  margin: 70px;
+  margin-bottom: 0;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
   &--block {
     display: flex;
     flex-direction: column;
@@ -10,9 +13,15 @@
     .topic {
       font-size: 40px;
       font-weight: bold;
-      margin-top: 50px;
     }
   }
+
+  .a{
+    width: 150%;
+    margin-left: 50px;
+    margin-top: 30px;
+  }
+
   .card {
     position: relative;
     background: white;
@@ -54,7 +63,7 @@
       top: -(160px / 2);
       width: (160px * 1.5) * 1.5;
       height: (160px * 1.5) * 1.5;
-      background: lighten(#571717, 20%);
+      background-color: lighten(#571717, 20%);
       border-radius: 160px + 160px;
       opacity: 0.8;
       transition: 0.2s ease;
@@ -66,7 +75,7 @@
         top: 0;
         width: (160px * 1.5);
         height: (160px * 1.5);
-        background: lighten(#571717, 10%);
+        background-color: lighten(#571717, 10%);
         border-radius: 160px + 160px;
         opacity: 0.9;
         transition: 0.25s ease;
@@ -79,7 +88,7 @@
         top: 0;
         width: 160px;
         height: 160px;
-        background: #571717;
+        background-color: #571717;
         border-radius: 160px + 160px;
         transition: 0.27s ease;
       }
