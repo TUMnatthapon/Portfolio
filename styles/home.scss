@@ -1,9 +1,8 @@
 .home-content {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   min-height: 91vh;
-  padding-left: 115px;
   background-color: #f5eded;
   &--greeting {
     font-size: 55px;
@@ -44,7 +43,7 @@
 
 .img-wrapper {
   position: relative;
-  margin-right: 150px;
+  right: 1%;
   &--profile {
     border-radius: 50%;
   }

@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useState } from "react";
 
 const Header = () => {
-  const [menu, setMenu] = useState(true);
+  const [menu, setMenu] = useState(false);
   return (
     <>
       <div id="home" />

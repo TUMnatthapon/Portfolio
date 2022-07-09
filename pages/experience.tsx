@@ -26,10 +26,8 @@ const Experience = () => {
                   <span className="text--status">Smart IP Camera</span>
                 </div>
                 <div className="des">
-                  <span className="gap" />
                   This project is about the face and object detection with deep
-                  learning technique. This project will be used in home CCTV
-                  camera to secure the house. If detected object is instantly
+                  learning technique. If detected object is instantly
                   recorded and notified to Line application.
                   <span
                     className="des--seemore"
@@ -85,7 +83,6 @@ const Experience = () => {
                   </span>
                 </div>
                 <div className="des">
-                  <span className="gap" />
                   This project is about website E-commerce for Distributed
                   Computing and Web Technologies subject.
                   <span
@@ -130,7 +127,7 @@ const Experience = () => {
             )}
           </div>
         </div>
-        <div className="a">
+        <div className="wrapper-right">
         <Image src={DevPic} alt="Photo" />
         </div>
       </div>
