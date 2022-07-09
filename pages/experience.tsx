@@ -12,14 +12,14 @@ const Experience = () => {
   return (
     <>
       <div id="experience">&nbsp;</div>
-      <div className="experience">
+      <div className="experience" >
         <div className="experience--block">
-          <div className="topic">
+          <div className="topic-page">
             <FontAwesomeIcon icon={faBriefcase} /> My{" "}
             <span className="light-brown-color">Portfolio</span>
           </div>
           <div>
-            <div className="card">
+            <div className="card" data-aos="fade-right">
               <div className="card--content">
                 <div className="text">
                   <h4 className="text--title">Project</h4>
@@ -74,7 +74,7 @@ const Experience = () => {
             )}
           </div>
           <div>
-            <div className="card">
+            <div className="card" data-aos="fade-right">
               <div className="card--content">
                 <div className="text">
                   <h4 className="text--title">Mini Project</h4>
@@ -127,7 +127,7 @@ const Experience = () => {
             )}
           </div>
         </div>
-        <div className="wrapper-right">
+        <div className="wrapper-right" data-aos="fade-up">
         <Image src={DevPic} alt="Photo" />
         </div>
       </div>

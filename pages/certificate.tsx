@@ -10,14 +10,14 @@ const Experience = () => {
     <>
       <div id="certificate">&nbsp;</div>
       <div className="certificate">
-        <div className="titile-page">
+        <div className="topic-page">
           <FontAwesomeIcon icon={faScroll} /> Certificate
         </div>
         <div className="certificate--block">
           <div className="hide">
-            <Image src={picLeft} alt="Photo" />
+            <Image src={picLeft} alt="Photo" data-aos="fade-right"/>
           </div>
-          <div className="cer">
+          <div className="cer" data-aos="zoom-out">
             <Image
               src="https://drive.google.com/uc?export=view&id=1ItS2Ok9DKpDnS4c0DEwPiVT1e8bWRNBX"
               alt="👋"
@@ -29,7 +29,7 @@ const Experience = () => {
             </div>
           </div>
           <div className="hide">
-            <Image src={picRight} alt="Photo" />
+            <Image src={picRight} alt="Photo" data-aos="fade-left"/>
           </div>
         </div>
         <div>

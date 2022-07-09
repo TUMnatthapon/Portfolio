@@ -5,7 +5,7 @@ const About = () => {
   return (
     <>
       <div id="about">&nbsp;</div>
-      <div className="about">
+      <div className="about" data-aos="fade-up-right" >
         <div className="container">
           <img className="img-about" src="/profile-about.png" />
           <div className="general">

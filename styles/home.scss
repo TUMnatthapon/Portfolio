@@ -1,8 +1,9 @@
 .home-content {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   min-height: 91vh;
+  padding-left: 115px;
   background-color: #f5eded;
   &--greeting {
     font-size: 55px;
@@ -43,7 +44,7 @@
 
 .img-wrapper {
   position: relative;
-  right: 1%;
+  margin-right: 150px;
   &--profile {
     border-radius: 50%;
   }
@@ -118,7 +119,7 @@
     background: hsl(random(360), 70%, 50%);
   }
 
-  @media only screen and (max-width: 1000px) {
+  @media only screen and (max-width: 1024px) {
     *::-webkit-scrollbar {
       display: none;
     }

@@ -7,7 +7,7 @@ const Header = () => {
     <>
       <div id="home" />
       <div className="header">
-        <div className="header --container">
+        <div className="header--container">
           <div className="header--logo">
             <Link href="#home">&lt; 🍀 TUM /&gt;</Link>
           </div>

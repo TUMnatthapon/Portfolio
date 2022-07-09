@@ -6,7 +6,23 @@
 @import "./contact.scss";
 @import "./certificate.scss";
 @import "./experience.scss";
+@import "aos/dist/aos.css";
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+*::-webkit-scrollbar {
+  width: 14px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #c6c2c7;
+  border-radius: 10px;
+  border: 3px solid #ffffff;
+}
+
 html {
   scroll-behavior: smooth;
   /* background-color: #f6f6f6; */
@@ -26,34 +42,18 @@ body {
   color: var(--light-brown-color);
 }
 
-.titile-page {
+.topic-page {
   text-align: center;
   font-size: 40px;
   font-weight: bold;
-  margin-top: 50px;
 }
 
 .gap {
   padding-left: 20px;
 }
 
-@media only screen and (max-width: 1000px) {
-  .content-page {
-    padding-left: 50px;
-    padding-right: 50px;
+@media only screen and (max-width: 650px) {
+  .topic-page {
+    font-size: 25px;
   }
-}
-
-*::-webkit-scrollbar {
-  width: 14px;
-}
-
-*::-webkit-scrollbar-track {
-  background: #ffffff;
-}
-
-*::-webkit-scrollbar-thumb {
-  background-color: #c6c2c7;
-  border-radius: 10px;
-  border: 3px solid #ffffff;
 }

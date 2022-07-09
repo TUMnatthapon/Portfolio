@@ -8,7 +8,7 @@ const Home = () => {
     <>
       <Background />
       <div className="home-content">
-        <div className="home-content--greeting">
+        <div className="home-content--greeting" data-aos="fade-up">
           HI ALL , I&rsquo;M TUM <span className="hide">. . .</span>
           <span className="wave-emoji hide">
             <Image src="/hello.png" alt="👋" width={50} height={50} />
@@ -26,7 +26,7 @@ const Home = () => {
             </a>
           </Link>
         </div>
-        <div className="img-wrapper">
+        <div className="img-wrapper" data-aos="fade-down">
           <Image
             className="img-wrapper--profile"
             src="/profile-home.jpg"
