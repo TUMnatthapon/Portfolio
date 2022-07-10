@@ -41,30 +41,54 @@ const Contact = () => {
           <ul className="wrapper-links">
             <div>
               <li>
-                <FontAwesomeIcon icon={faCircleChevronRight} />
-                <Link href="#home">Home</Link>
+                <Link href="#home">
+                  <a>
+                    <FontAwesomeIcon icon={faCircleChevronRight} />
+                    <span>Home</span>
+                  </a>
+                </Link>
               </li>
               <li>
-                <FontAwesomeIcon icon={faCircleChevronRight} />
-                <Link href="#about">About</Link>
+                <Link href="#about">
+                  <a>
+                    <FontAwesomeIcon icon={faCircleChevronRight} />
+                    <span>About</span>
+                  </a>
+                </Link>
               </li>
               <li>
-                <FontAwesomeIcon icon={faCircleChevronRight} />
-                <Link href="#skills">Skills</Link>
+                <Link href="#skills">
+                  <a>
+                    <FontAwesomeIcon icon={faCircleChevronRight} />
+                    <span>Skills</span>
+                  </a>
+                </Link>
               </li>
             </div>
             <div>
               <li>
-                <FontAwesomeIcon icon={faCircleChevronRight} />
-                <Link href="#education">Education</Link>
+                <Link href="#education">
+                  <a>
+                    <FontAwesomeIcon icon={faCircleChevronRight} />
+                    <span>Education</span>
+                  </a>
+                </Link>
               </li>
               <li>
-                <FontAwesomeIcon icon={faCircleChevronRight} />
-                <Link href="#experience">Portfolio</Link>
+                <Link href="#experience">
+                  <a>
+                    <FontAwesomeIcon icon={faCircleChevronRight} />
+                    <span>Portfolio</span>
+                  </a>
+                </Link>
               </li>
               <li>
-                <FontAwesomeIcon icon={faCircleChevronRight} />
-                <Link href="#certificate">Certificate</Link>
+                <Link href="#certificate">
+                  <a>
+                    <FontAwesomeIcon icon={faCircleChevronRight} />
+                    <span>Certificate</span>
+                  </a>
+                </Link>
               </li>
             </div>
           </ul>

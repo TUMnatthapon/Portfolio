@@ -16,6 +16,7 @@
 
 .wrapper-links{
   display: flex;
+  flex-direction: row;
 }
 
 .contact {
@@ -34,9 +35,11 @@
       margin: 10px;
       margin-top: 0;
       a {
-        margin: 10px;
         color: white;
         text-decoration: none;
+        span{
+          margin: 10px;
+        }
         &::before {
           content: "";
           transition: 300ms;
