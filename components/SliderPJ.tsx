@@ -1,6 +1,9 @@
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronLeft,faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import {
+  faChevronLeft,
+  faChevronRight,
+} from "@fortawesome/free-solid-svg-icons";
 
 const ImageSlider = () => {
   const [current, setCurrent] = useState(0);
@@ -27,7 +30,12 @@ const ImageSlider = () => {
 
   return (
     <div className="slider">
-      <FontAwesomeIcon className="slider--arrow" icon={faChevronLeft} onClick={prevSlide} />
+      <FontAwesomeIcon
+        className="slider--arrow"
+        icon={faChevronLeft}
+        onClick={prevSlide}
+      />
+      <div className="loading gap" />
       {SliderData.map((slide, index) => {
         return (
           <div
@@ -35,12 +43,19 @@ const ImageSlider = () => {
             key={index}
           >
             {index === current && (
-              <img src={slide.image} alt="Photo" className="image" />
+              <>
+                <img src={slide.image} alt="Photo" className="image" />
+              </>
             )}
           </div>
         );
       })}
-      <FontAwesomeIcon className="slider--arrow" icon={faChevronRight} onClick={nextSlide} />
+      <span className="gap" />
+      <FontAwesomeIcon
+        className="slider--arrow"
+        icon={faChevronRight}
+        onClick={nextSlide}
+      />
     </div>
   );
 };

@@ -82,9 +82,11 @@
         border-color: #c5964b;
       }
       .general {
-        position: relative;  
+        display: flex;
+        position: relative;
         width: 90%;
         margin-top: 15px;
+        right: -1.5%;
         font-size: 18px;
       }
     }
