@@ -1,5 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
+import Image from "next/image";
+import AboutPic2 from "../public/profile-about2.png";
 
 const About = () => {
   return (
@@ -11,7 +13,16 @@ const About = () => {
             <FontAwesomeIcon icon={faUser} /> About{" "}
             <span className="brown-color">ME</span>
           </div>
-          <img className="img-about" src="/profile-about.png" />
+          <img
+            className="img-about hide"
+            src="/profile-about.png"
+            alt="Picture"
+          />
+          <img
+            className="img-about hide-website"
+            src="/profile-about2.png"
+            alt="Picture"
+          />
           <div className="general">
             <div className="hide">
               <div className="set-text">
@@ -30,7 +41,7 @@ const About = () => {
               the future, I intend to be a Front-end developer because I have
               the ability and determination in computer programming.
             </p>
-            <span className="logo-about hide">&lt; 🍀 TUM /&gt;</span>
+            <span className="logo-about hide">&lt; T U M /&gt;</span>
           </div>
         </div>
       </div>
