@@ -12,7 +12,7 @@ const Contact = () => {
   return (
     <>
       <div className="contact">
-        <div className="area-block">
+        <div className="area-block hide">
           <div className="font-title">Tum Portfolio</div>
           <a>Thank you for visiting my personal portfolio website. </a>
         </div>

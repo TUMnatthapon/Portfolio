@@ -5,11 +5,15 @@ const About = () => {
   return (
     <>
       <div id="about">&nbsp;</div>
-      <div className="about" data-aos="fade-up-right" >
+      <div className="about" data-aos="fade-up-right">
         <div className="container">
+          <div className="topic-page hide-website">
+            <FontAwesomeIcon icon={faUser} /> About{" "}
+            <span className="brown-color">ME</span>
+          </div>
           <img className="img-about" src="/profile-about.png" />
           <div className="general">
-            <div>
+            <div className="hide">
               <div className="set-text">
                 About{" "}
                 <FontAwesomeIcon icon={faUser} className="set-text--icon" />
@@ -26,7 +30,7 @@ const About = () => {
               the future, I intend to be a Front-end developer because I have
               the ability and determination in computer programming.
             </p>
-            <span className="logo-about">&lt; 🍀 TUM /&gt;</span>
+            <span className="logo-about hide">&lt; 🍀 TUM /&gt;</span>
           </div>
         </div>
       </div>

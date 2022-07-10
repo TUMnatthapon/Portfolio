@@ -8,7 +8,9 @@ const Education = () => {
     <>
       <div id="education">&nbsp;</div>
       <div className="education">
-        <Image src={EducationPic} alt="Photo" data-aos="fade-left" />
+        <div className="pic-addOn">
+          <Image src={EducationPic} alt="Photo" data-aos="fade-left" />
+        </div>
         <div className="education--block" data-aos="fade-right">
           <div className="topic-page">
             <FontAwesomeIcon icon={faGraduationCap} /> My{" "}
@@ -16,7 +18,11 @@ const Education = () => {
           </div>
           <div className="education--content">
             <div className="education--content--title">
-              <a href="https://www.phuket.psu.ac.th" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.phuket.psu.ac.th"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Prince of Songkla University, Phuket Campus
               </a>
             </div>
@@ -28,7 +34,13 @@ const Education = () => {
           </div>
           <div className="education--content">
             <div className="education--content--title">
-              <a href="https://www.stw.ac.th" target="_blank" rel="noopener noreferrer">Satunwittaya School </a>
+              <a
+                href="https://www.stw.ac.th"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Satunwittaya School{" "}
+              </a>
             </div>
             <span className="dot">STW</span>
             <p>High school | Science and Mathematics Program</p>

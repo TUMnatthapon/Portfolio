@@ -2,7 +2,7 @@ import IconC from "../components/icon-c";
 import IconCPP from "../components/icon-cpp";
 import IconNextJs from "../components/icon-nextjs";
 import Image from "next/image";
-import ComputerPic from "../public/Dev-pic.svg";
+import Code from "../public/Dev-pic.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLaptopCode } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -28,8 +28,8 @@ const Skills = () => {
           <div className="topic-page">
             <FontAwesomeIcon icon={faLaptopCode} /> Skills
           </div>
-          <Image src={ComputerPic} alt="Photo" />
-          <ul className="skills--wrapper">
+          <Image src={Code} alt="Photo" />
+          <div className="skills--wrapper">
             <li onClick={() => openNewTab("https://www.learn-c.org/")}>
               <IconC />
               <p>C</p>
@@ -74,7 +74,7 @@ const Skills = () => {
               <IconNextJs />
               <p>NextJS</p>
             </li>
-          </ul>
+          </div>
         </div>
       </div>
     </>

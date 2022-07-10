@@ -59,3 +59,24 @@
     }
   }
 }
+
+@media only screen and (max-width: 1024px) {
+  .education {
+    flex-direction: column-reverse;
+    &--block {
+      position: relative;
+      bottom: 50px;
+    }
+    &--content {
+      &--title {
+        font-size: 23px;
+      }
+      p {
+        font-size: 16px;
+      }
+      .dot {
+        top: 16px;
+      }
+    }
+  }
+}

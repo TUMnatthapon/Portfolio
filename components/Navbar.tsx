@@ -9,7 +9,7 @@ const Header = () => {
       <div className="header">
         <div className="header--container">
           <div className="header--logo">
-            <Link href="#home">&lt; 🍀 TUM /&gt;</Link>
+            <Link href="#home">&lt; &#x1F340; TUM /&gt;</Link>
           </div>
             <ul className={menu ? "menu" : "menu --active"}>
               <li onClick={() => setMenu(!menu)}>
