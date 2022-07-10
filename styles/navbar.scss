@@ -106,13 +106,12 @@
       margin-left: 10px;
     }
     .menu {
-      display: flex;
-      flex-direction: column;
       position: absolute;
+      flex-direction: column;
       top: 44px;
       width: 100%;
       height: auto;
-      background-color: white;
+      background-color: rgb(255, 3, 3);
       padding-left: 18px;
       visibility: hidden;
       opacity: 0;
