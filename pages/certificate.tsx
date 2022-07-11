@@ -14,7 +14,7 @@ const Experience = () => {
           <FontAwesomeIcon icon={faScroll} /> Certificate
         </div>
         <div className="certificate--block">
-          <div className="hide">
+          <div className="hide-mobile">
             <Image src={picLeft} alt="Photo" data-aos="fade-right"/>
           </div>
           <div className="cer" data-aos="zoom-out">
@@ -28,7 +28,7 @@ const Experience = () => {
               Read Paper
             </div>
           </div>
-          <div className="hide">
+          <div className="hide-mobile">
             <Image src={picRight} alt="Photo" data-aos="fade-left"/>
           </div>
         </div>

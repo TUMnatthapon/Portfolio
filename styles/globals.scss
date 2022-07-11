@@ -6,66 +6,6 @@
 @import "./contact.scss";
 @import "./certificate.scss";
 @import "./experience.scss";
+@import "./add-on.scss";
 @import "aos/dist/aos.css";
 @import "@fontsource/poppins";
-
-*::-webkit-scrollbar {
-  width: 14px;
-}
-
-*::-webkit-scrollbar-track {
-  background: #ffffff;
-}
-
-*::-webkit-scrollbar-thumb {
-  background-color: #c6c2c7;
-  border-radius: 10px;
-  border: 3px solid #ffffff;
-}
-
-* {
-  font-family: "Poppins", sans-serif;
-  scroll-behavior: smooth;
-  padding: 0;
-  margin: 0;
-}
-
-.brown-color {
-  color: var(--theme-color);
-}
-
-.light-brown-color{
-  color: var(--light-brown-color);
-}
-
-.topic-page {
-  text-align: center;
-  font-size: 40px;
-  font-weight: bold;
-}
-
-.gap {
-  padding-left: 20px;
-}
-
-.top {
-  margin-top: 60px;
-}
-
-.hide-website {
-  display: none;
-}
-
-@media only screen and (max-width: 1024px) {
-  .hide {
-    display: none;
-  }
-  .hide-website {
-    display: block;
-  }
-  .pic-addOn{
-    position: relative;
-    width: 80%;
-    bottom: 30px;
-  }
-}

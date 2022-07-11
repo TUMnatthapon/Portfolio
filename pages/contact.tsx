@@ -36,7 +36,7 @@ const Contact = () => {
           </div>
           <div id="contact">&nbsp;</div>
         </div>
-        <div>
+        <div className="hide-mobile">
           <div className="font-title">Quick Links</div>
           <ul className="wrapper-links">
             <div>

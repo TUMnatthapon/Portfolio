@@ -17,7 +17,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 const Skills = () => {
-  const openNewTab = url => {
+  const openNewTab = (url) => {
     window.open(url, "_blank", "noopener,noreferrer");
   };
   return (
@@ -32,47 +32,68 @@ const Skills = () => {
           <div className="skills--wrapper">
             <li onClick={() => openNewTab("https://www.learn-c.org/")}>
               <IconC />
-              <p>C</p>
+              <p className="hide-mobile">C</p>
             </li>
             <li onClick={() => openNewTab("http://www.cplusplus.org/")}>
               <IconCPP />
-              <p>C++</p>
+              <p className="hide-mobile">C++</p>
             </li>
             <li onClick={() => openNewTab("https://html.com/")}>
-              <FontAwesomeIcon icon={faHtml5} size="4x" />
-              <p>HTML5</p>
+              <a>
+                {" "}
+                <FontAwesomeIcon icon={faHtml5} size="4x"/>
+              </a>
+              <p className="hide-mobile">HTML5</p>
             </li>
-            <li onClick={() => openNewTab("https://www.tutorialspoint.com/css/index.htm")}>
-              <FontAwesomeIcon icon={faCss3Alt} size="4x" />
-              <p>CSS3</p>
+            <li
+              onClick={() =>
+                openNewTab("https://www.tutorialspoint.com/css/index.htm")
+              }
+            >
+              <a>
+                <FontAwesomeIcon icon={faCss3Alt} size="4x"/>
+              </a>
+              <p className="hide-mobile">CSS3</p>
             </li>
             <li onClick={() => openNewTab("https://sass-lang.com/")}>
-              <FontAwesomeIcon icon={faSass} size="4x" />
-              <p>Sass</p>
+              <a>
+                <FontAwesomeIcon icon={faSass} size="4x"/>
+              </a>
+              <p className="hide-mobile">Sass</p>
             </li>
             <li onClick={() => openNewTab("https://www.javascript.com/")}>
-              <FontAwesomeIcon icon={faJsSquare} size="4x" />
-              <p>JavaScript</p>
+              <a>
+                <FontAwesomeIcon icon={faJsSquare} size="4x"/>
+              </a>
+              <p className="hide-mobile">JavaScript</p>
             </li>
             <li onClick={() => openNewTab("https://nodejs.org/en/")}>
-              <FontAwesomeIcon icon={faNode} size="4x" />
-              <p>NodeJS</p>
+              <a>
+                <FontAwesomeIcon icon={faNode} size="4x"/>
+              </a>
+              <p className="hide-mobile">NodeJS</p>
             </li>
             <li onClick={() => openNewTab("https://reactjs.org/")}>
-              <FontAwesomeIcon icon={faReact} size="4x" />
-              <p>ReactJS</p>
+              <a>
+                <FontAwesomeIcon icon={faReact} size="4x"/>
+              </a>
+              <p className="hide-mobile">ReactJS</p>
             </li>
             <li onClick={() => openNewTab("https://getbootstrap.com/")}>
-              <FontAwesomeIcon icon={faBootstrap} size="4x" />
-              <p>Bootstrap</p>
+              <a>
+                <FontAwesomeIcon icon={faBootstrap} size="4x"/>
+              </a>
+              <p className="hide-mobile">Bootstrap</p>
             </li>
             <li onClick={() => openNewTab("https://www.python.org/")}>
-              <FontAwesomeIcon icon={faPython} size="4x" />
-              <p>Python</p>
+              <a>
+                <FontAwesomeIcon icon={faPython} size="4x"/>
+              </a>
+              <p className="hide-mobile">Python</p>
             </li>
             <li onClick={() => openNewTab("https://nextjs.org/")}>
               <IconNextJs />
-              <p>NextJS</p>
+              <p className="hide-mobile">NextJS</p>
             </li>
           </div>
         </div>

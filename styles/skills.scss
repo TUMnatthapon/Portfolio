@@ -1,7 +1,7 @@
 .skills {
   text-align: center;
-  margin: 50px;
   margin-bottom: 0;
+  margin: 50px;
   &--block {
     display: flex;
     flex-direction: column;
@@ -34,8 +34,18 @@
   }
 }
 
-@media only screen and (max-width: 1024px) {
-  .skills{
-    width: 100%;
+@media only screen and (max-width: 650px) {
+  .skills {
+    margin-top: 15%;
+    margin-bottom: 0;
+    &--wrapper {
+      li a {
+        font-size: 10px;
+      }
+    }
+
+    .custom-icon {
+      height: 37.5px;
+    }
   }
 }

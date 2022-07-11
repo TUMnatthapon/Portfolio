@@ -1,5 +1,4 @@
 .about {
-  margin: 55px;
   margin-top: 11.4vh;
   .container {
     display: flex;
@@ -66,8 +65,7 @@
 
 @media only screen and (max-width: 1024px) {
   .about {
-    /* margin-top: 5vh; */
-    width: 100%;
+    margin-top: 5vh;
     .container {
       flex-direction: column;
       justify-content: center;
