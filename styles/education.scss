@@ -1,8 +1,9 @@
 .education {
   display: flex;
-  justify-content: center;
   align-items: center;
-  padding-top: 110px;
+  justify-content: center;
+  margin: 55px;
+  margin-top: 110px;
   &--block {
     position: relative;
     bottom: 15px;
@@ -63,6 +64,7 @@
 @media only screen and (max-width: 1024px) {
   .education {
     flex-direction: column-reverse;
+    width: 100%;
     &--content {
       &--title {
         font-size: 23px;

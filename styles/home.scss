@@ -1,4 +1,5 @@
 .home-content {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -6,6 +7,7 @@
   width: auto;
   padding-left: 115px;
   background-color: #f5eded;
+  top: 60px;
   &--greeting {
     font-size: 55px;
     font-weight: bold;
@@ -120,18 +122,16 @@
     background: hsl(random(360), 70%, 50%);
   }
 
-@media only screen and (min-width: 650px) and (max-width: 1024px) {
-    *::-webkit-scrollbar {
-      display: none;
-    }
+@media only screen and (max-width: 1024px) {
     .home-content {
       flex-direction: column-reverse;
       justify-content: center;
       text-align: center;
       padding-left: 50px;
       padding-right: 50px;
+      width: 100%;
       &--greeting {
-        margin-top: 5%;
+        margin-top: 15%;
         font-size: 30px;
         font-weight: bold;
       }
