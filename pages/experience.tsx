@@ -12,7 +12,7 @@ const Experience = () => {
   return (
     <>
       <div id="experience">&nbsp;</div>
-      <div className="experience" >
+      <div className="experience">
         <div className="experience--block">
           <div className="topic-page" data-aos="fade-down">
             <FontAwesomeIcon icon={faBriefcase} /> My{" "}
@@ -27,13 +27,13 @@ const Experience = () => {
                 </div>
                 <div className="des">
                   This project is about the face and object detection with deep
-                  learning technique. If detected object is instantly
-                  recorded and notified to Line application.
+                  learning technique. If detected object is instantly recorded
+                  and notified to Line application.
                   <span
                     className="des--seemore"
                     onClick={() => setDetailsPJ(!detailsPJ)}
                   >
-                   &nbsp;More &nbsp;
+                    SeeMore
                   </span>
                 </div>
               </div>
@@ -89,7 +89,7 @@ const Experience = () => {
                     className="des--seemore"
                     onClick={() => setDetailsMini(!detailsMini)}
                   >
-                    &nbsp;More &nbsp;
+                    SeeMore
                   </span>
                 </div>
               </div>
@@ -128,7 +128,7 @@ const Experience = () => {
           </div>
         </div>
         <div className="wrapper-right" data-aos="fade-up">
-        <Image src={DevPic} alt="Photo" />
+          <Image src={DevPic} alt="Photo" />
         </div>
       </div>
     </>
