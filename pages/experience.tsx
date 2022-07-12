@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faXmark, faBriefcase } from "@fortawesome/free-solid-svg-icons";
+import { faCircleXmark, faBriefcase } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import SliderMiniPJ from "../components/SliderMiniPJ";
 import SliderPJ from "../components/SliderPJ";
@@ -33,7 +33,7 @@ const Experience = () => {
                     className="des--seemore"
                     onClick={() => setDetailsPJ(!detailsPJ)}
                   >
-                    See more
+                   &nbsp;More &nbsp;
                   </span>
                 </div>
               </div>
@@ -44,7 +44,7 @@ const Experience = () => {
                 <div className="popup--box">
                   <FontAwesomeIcon
                     className="button-close"
-                    icon={faXmark}
+                    icon={faCircleXmark}
                     onClick={() => setDetailsPJ(!detailsPJ)}
                   />
                   <div className="Popup-wrapper">
@@ -89,7 +89,7 @@ const Experience = () => {
                     className="des--seemore"
                     onClick={() => setDetailsMini(!detailsMini)}
                   >
-                    See more
+                    &nbsp;More &nbsp;
                   </span>
                 </div>
               </div>
@@ -100,7 +100,7 @@ const Experience = () => {
                 <div className="popup--box">
                   <FontAwesomeIcon
                     className="button-close"
-                    icon={faXmark}
+                    icon={faCircleXmark}
                     onClick={() => setDetailsMini(!detailsMini)}
                   />
                   <div className="Popup-wrapper">

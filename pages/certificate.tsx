@@ -1,9 +1,11 @@
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faXmark, faScroll } from "@fortawesome/free-solid-svg-icons";
+import { faCircleXmark, faScroll } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
+import Cer from "../public/Cer.png";
 import picLeft from "../public/womenLeft.svg";
 import picRight from "../public/womenRight.svg";
+
 const Experience = () => {
   const [popup, setPopup] = useState(false);
   return (
@@ -15,21 +17,18 @@ const Experience = () => {
         </div>
         <div className="certificate--block">
           <div className="hide-mobile">
-            <Image src={picLeft} alt="Photo" data-aos="fade-right"/>
+            <Image src={picLeft} alt="Photo" data-aos="fade-right" />
           </div>
           <div className="cer" data-aos="zoom-out">
-            <Image
-              src="https://drive.google.com/uc?export=view&id=1ItS2Ok9DKpDnS4c0DEwPiVT1e8bWRNBX"
-              alt="👋"
-              width={750}
-              height={500}
-            />
+            <div className="cer--wrapper">
+              <Image src={Cer} alt="Certificate" />
+            </div>
             <div className="read-more" onClick={() => setPopup(!popup)}>
               Read Paper
             </div>
           </div>
           <div className="hide-mobile">
-            <Image src={picRight} alt="Photo" data-aos="fade-left"/>
+            <Image src={picRight} alt="Photo" data-aos="fade-left" />
           </div>
         </div>
         <div>
@@ -38,7 +37,7 @@ const Experience = () => {
               <div className="popup--box">
                 <FontAwesomeIcon
                   className="button-close"
-                  icon={faXmark}
+                  icon={faCircleXmark}
                   onClick={() => setPopup(!popup)}
                 />
                 <div className="paper">

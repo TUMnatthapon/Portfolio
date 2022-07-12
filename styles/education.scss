@@ -14,12 +14,16 @@
       font-size: 28px;
       letter-spacing: 1px;
       text-decoration: none;
+      transition: 0.25s ease;
       a {
         text-decoration: none;
         color: #212121;
         &:hover {
           color: var(--light-brown-color);
         }
+      }
+      &:hover{
+        transform: translateY(-3%);
       }
     }
     p {
@@ -79,7 +83,7 @@
 }
 @media only screen and (max-width: 650px) {
   .education {
-    margin: 15% 2% 0 0;
+    margin: 15% 2% 5% 0;
     flex-direction: column-reverse;
     &--content {
       &--title {
