@@ -10,7 +10,7 @@ const Experience = () => {
     <>
       <div id="certificate">&nbsp;</div>
       <div className="certificate">
-        <div className="topic-page">
+        <div className="topic-page" data-aos="fade-down">
           <FontAwesomeIcon icon={faScroll} /> Certificate
         </div>
         <div className="certificate--block">

@@ -34,12 +34,11 @@ const Contact = () => {
             <FontAwesomeIcon icon={faLocationDot} />
             <a> Phuket, Thailand</a>
           </div>
-          <div id="contact">&nbsp;</div>
         </div>
-        <div className="hide-mobile">
+        <div>
           <div className="font-title">Quick Links</div>
           <ul className="wrapper-links">
-            <div>
+            <div className="wrapper-links --item">
               <li>
                 <Link href="#home">
                   <a>
@@ -65,7 +64,7 @@ const Contact = () => {
                 </Link>
               </li>
             </div>
-            <div>
+            <div className="wrapper-links --item">
               <li>
                 <Link href="#education">
                   <a>
@@ -92,6 +91,7 @@ const Contact = () => {
               </li>
             </div>
           </ul>
+          <div id="contact">&nbsp;</div>
         </div>
       </div>
     </>

@@ -1,7 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
-import Image from "next/image";
-import AboutPic2 from "../public/profile-about2.png";
 
 const About = () => {
   return (

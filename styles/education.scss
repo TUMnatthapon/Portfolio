@@ -62,29 +62,34 @@
 
 @media only screen and (max-width: 1024px) {
   .education {
-    margin: 1% 55px 3% 0px;
+    margin: 6% 2% 3% 0;
     &--content {
-      width: 90%;
+      padding-right: 0;
       &--title {
-        font-size: 21px;
+        font-size: 18px;
       }
       p {
-        font-size: 16px;
+        font-size: 15px;
       }
       .dot {
-        top: 16px;
+        top: 14px;
       }
     }
   }
 }
 @media only screen and (max-width: 650px) {
   .education {
+    margin: 15% 2% 0 0;
     flex-direction: column-reverse;
-    margin-left: 0;
-    margin-top: 15%;
     &--content {
       &--title {
-        font-size: 20px;
+        font-size: 17px;
+      }
+      p {
+        font-size: 14px;
+      }
+      .dot {
+        top: 12px;
       }
     }
   }

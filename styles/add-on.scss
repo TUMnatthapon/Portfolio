@@ -12,9 +12,12 @@
   border: 3px solid #ffffff;
 }
 
-body {
+* {
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
+}
+
+body {
   padding: 0;
   margin: 0;
 }
@@ -46,12 +49,11 @@ body {
 }
 
 @media only screen and (max-width: 1024px) {
-
   .hide-website {
     display: block;
   }
 
-  .hide{
+  .hide {
     display: none;
   }
 

@@ -14,7 +14,7 @@ const Experience = () => {
       <div id="experience">&nbsp;</div>
       <div className="experience" >
         <div className="experience--block">
-          <div className="topic-page">
+          <div className="topic-page" data-aos="fade-down">
             <FontAwesomeIcon icon={faBriefcase} /> My{" "}
             <span className="light-brown-color">Portfolio</span>
           </div>

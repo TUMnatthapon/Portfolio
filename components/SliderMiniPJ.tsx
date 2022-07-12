@@ -50,7 +50,6 @@ const ImageSlider = () => {
           </div>
         );
       })}
-      <span className="gap" />
       <FontAwesomeIcon
         className="slider--arrow"
         icon={faChevronRight}

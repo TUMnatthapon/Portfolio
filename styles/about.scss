@@ -17,10 +17,9 @@
     }
     .general {
       position: absolute;
-      width: 50%;
-      height: 70%;
-      top: 20%;
-      right: 2%;
+      width: 53%;
+      top: 25%;
+      right: 0;
       box-sizing: border-box;
       font-size: 18px;
       letter-spacing: 1.5px;
@@ -54,8 +53,8 @@
       }
       .logo-about {
         position: absolute;
-        top: -26.3%;
-        right: 0;
+        top: -32%;
+        right: 3%;
         font-weight: bold;
         cursor: context-menu;
       }
@@ -65,29 +64,42 @@
 
 @media only screen and (max-width: 1024px) {
   .about {
-    margin-top: 5vh;
+    margin-top: 0;
     .container {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      background-color: #fcfcfd;
-      width: auto;
-      margin: 4%;
+      margin: 10%;
+      padding: 2%;
+      padding-bottom: 0;
       margin-bottom: 0;
+      border-radius: 10px;
       .img-about {
         margin: 0;
+        margin-top: 10px;
         width: 50%;
         border-style: solid;
         border-width: 5px;
         border-color: #c5964b;
+        border-radius: 10px;
       }
       .general {
-        display: flex;
         position: relative;
-        width: 90%;
-        margin-top: 15px;
-        right: -1.5%;
-        font-size: 18px;
+        width: 96%;
+        margin-top: 10px;
+        font-size: 16px;
+        letter-spacing: 1.2px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 650px) {
+  .about {
+    .container {
+      .general {
+        margin-top: 5px;
+        font-size: 13px;
+        letter-spacing: 0.5px;
       }
     }
   }
