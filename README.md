@@ -1,8 +1,12 @@
 # Portfolio By TUM
 
-```bash```
+First, run the development server:
+
+```bash
 npm run dev
-``````````
+# or
+yarn dev
+```
 
 ## Deploy on Vercel
 
