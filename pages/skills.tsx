@@ -32,18 +32,18 @@ const Skills = () => {
           <div className="skills--wrapper">
             <li onClick={() => openNewTab("https://www.learn-c.org/")}>
               <IconC />
-              <p className="hide-mobile">C</p>
+              <p >C</p>
             </li>
             <li onClick={() => openNewTab("http://www.cplusplus.org/")}>
               <IconCPP />
-              <p className="hide-mobile">C++</p>
+              <p >C++</p>
             </li>
             <li onClick={() => openNewTab("https://html.com/")}>
               <a>
                 {" "}
                 <FontAwesomeIcon icon={faHtml5} size="4x"/>
               </a>
-              <p className="hide-mobile">HTML5</p>
+              <p >HTML5</p>
             </li>
             <li
               onClick={() =>
@@ -53,47 +53,47 @@ const Skills = () => {
               <a>
                 <FontAwesomeIcon icon={faCss3Alt} size="4x"/>
               </a>
-              <p className="hide-mobile">CSS3</p>
+              <p >CSS3</p>
             </li>
             <li onClick={() => openNewTab("https://sass-lang.com/")}>
               <a>
                 <FontAwesomeIcon icon={faSass} size="4x"/>
               </a>
-              <p className="hide-mobile">Sass</p>
+              <p >Sass</p>
             </li>
             <li onClick={() => openNewTab("https://www.javascript.com/")}>
               <a>
                 <FontAwesomeIcon icon={faJsSquare} size="4x"/>
               </a>
-              <p className="hide-mobile">JavaScript</p>
+              <p >JavaScript</p>
             </li>
             <li onClick={() => openNewTab("https://nodejs.org/en/")}>
               <a>
                 <FontAwesomeIcon icon={faNode} size="4x"/>
               </a>
-              <p className="hide-mobile">NodeJS</p>
+              <p >NodeJS</p>
             </li>
             <li onClick={() => openNewTab("https://reactjs.org/")}>
               <a>
                 <FontAwesomeIcon icon={faReact} size="4x"/>
               </a>
-              <p className="hide-mobile">ReactJS</p>
+              <p >ReactJS</p>
             </li>
             <li onClick={() => openNewTab("https://getbootstrap.com/")}>
               <a>
                 <FontAwesomeIcon icon={faBootstrap} size="4x"/>
               </a>
-              <p className="hide-mobile">Bootstrap</p>
+              <p >Bootstrap</p>
             </li>
             <li onClick={() => openNewTab("https://www.python.org/")}>
               <a>
                 <FontAwesomeIcon icon={faPython} size="4x"/>
               </a>
-              <p className="hide-mobile">Python</p>
+              <p >Python</p>
             </li>
             <li onClick={() => openNewTab("https://nextjs.org/")}>
               <IconNextJs />
-              <p className="hide-mobile">NextJS</p>
+              <p >NextJS</p>
             </li>
           </div>
         </div>
