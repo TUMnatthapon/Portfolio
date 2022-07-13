@@ -1,16 +1,13 @@
 .skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 55px;
   text-align: center;
-  margin-bottom: 0;
-  margin: 50px;
-  &--block {
-    display: flex;
-    flex-direction: column;
-  }
-  &--wrapper {
-    display: flex;
+  &.--wrapper {
     flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
+    flex-direction: row;
     list-style-type: none;
     margin-top: 1.1%;
     li {
@@ -26,6 +23,7 @@
     }
   }
 }
+
 .custom-icon {
   height: 60px;
   &--background {
@@ -38,15 +36,11 @@
 
 @media only screen and (max-width: 650px) {
   .skills {
-    margin-top: 15%;
-    margin: 0;
-    &--wrapper {
+    margin-top: 12%;
+    &.--wrapper {
       margin-top: 15px;
-      li {
-        padding: 10px;
-        a {
-          font-size: 10px;
-        }
+      li a{
+        font-size: 10px;
       }
     }
     .custom-icon {
