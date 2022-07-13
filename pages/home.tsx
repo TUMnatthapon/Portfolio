@@ -23,11 +23,14 @@ const Home = () => {
           <div className="home-content--font-bachelor">
             Bachelor&rsquo;s degree of Engineering in Computer Engineering
           </div>
-          <Link href="#about">
-            <a className="button-style">
-              About Me <DownCircleOutlined />
-            </a>
-          </Link>
+          <a
+            className="button-style"
+            href="https://drive.google.com/file/d/1vwYc22900twaT9UTSmUM8SYDTboIug0y/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            RESUME <DownCircleOutlined />
+          </a>
         </div>
         <div className="img-wrapper" data-aos="fade-down">
           <Image

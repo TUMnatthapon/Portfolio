@@ -44,7 +44,7 @@ const Education = () => {
             </div>
             <span className="dot">STW</span>
             <p>High school | Science and Mathematics Program</p>
-            <p>2011 - 2017 | Completed</p>
+            <p>2014 - 2017 | Completed</p>
           </div>
         </div>
       </div>
