@@ -5,6 +5,7 @@ import { useState } from "react";
 import SliderMiniPJ from "../components/SliderMiniPJ";
 import SliderPJ from "../components/SliderPJ";
 import DevPic from "../public/Dev-pic2.svg";
+import Experience2 from "./experience2";
 
 const Experience = () => {
   const [detailsPJ, setDetailsPJ] = useState(false);
@@ -18,6 +19,9 @@ const Experience = () => {
             <FontAwesomeIcon icon={faBriefcase} /> My{" "}
             <span className="light-brown-color">Portfolio</span>
           </div>
+          <div className="experience--title">
+            <span className="light-brown-color">Experience</span> ( Education )
+          </div>
           <div>
             <div className="card" data-aos="fade-right">
               <div className="card--content">
@@ -28,7 +32,7 @@ const Experience = () => {
                 <div className="des">
                   This project is about the face and object detection with deep
                   learning technique. If detected object is instantly recorded
-                  and notified to Line application.
+                  and notified to the Line application.
                   <span
                     className="des--seemore"
                     onClick={() => setDetailsPJ(!detailsPJ)}
@@ -131,6 +135,7 @@ const Experience = () => {
           <Image src={DevPic} alt="Photo" />
         </div>
       </div>
+      <Experience2 />
     </>
   );
 };

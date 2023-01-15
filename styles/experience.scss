@@ -3,15 +3,24 @@
   margin: 70px 60px 0 55px;
   align-items: center;
   justify-content: center;
-  height: 80vh;
+  /* height: 80vh; */
   &--block {
     display: flex;
     flex-direction: column;
     gap: 1em;
   }
+  &--title {
+    font-size: 25px;
+    font-weight: bold;
+  }
   .wrapper-right {
     width: 100%;
     margin-left: 50px;
+    margin-top: 50px;
+  }
+
+  .block-right {
+    padding-left: 1em;
   }
 
   .card {
@@ -35,6 +44,13 @@
         }
         &--status {
           font-size: 16px;
+          a {
+            color: #212121;
+            text-decoration: none;
+            &:hover {
+              color: var(--theme-color);
+            }
+          }
         }
       }
       .des {
@@ -88,7 +104,7 @@
       }
     }
     &:hover {
-      transform: translateY(-5%);
+      /* transform: translateY(-5%); */
       .des--seemore {
         background-color: white;
         box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.2),
@@ -216,9 +232,16 @@
 @media only screen and (max-width: 1024px) {
   .experience {
     flex-direction: column;
+    .block-right {
+      padding-left: 0em;
+      padding-top: 1em;
+    }
     .wrapper-right {
-      width: 70%;
-      margin: 50px 0;
+      display: none;
+    }
+    &--title {
+      font-size: 20px;
+      text-align: center;
     }
   }
   .details {
@@ -228,8 +251,7 @@
 
 @media only screen and (max-width: 650px) {
   .experience {
-    margin: 0 5% ;
-    height: 100vh;
+    margin: 30px 5%;
     .card {
       background-color: #212121;
       &--content {
@@ -242,6 +264,12 @@
           }
           &--status {
             font-size: 15px;
+            a {
+              color: white;
+              &:hover {
+                color: white;
+              }
+            }
           }
         }
         .des {
@@ -291,13 +319,13 @@
   }
 
   .Popup-wrapper {
-    margin:15px 0;
+    margin: 15px 0;
     gap: 10px;
   }
-  
+
   .slider--arrow {
-      height: 15px;
-    }
+    height: 15px;
+  }
 
   .details {
     flex-wrap: wrap;

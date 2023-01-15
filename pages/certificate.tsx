@@ -10,7 +10,7 @@ const Experience = () => {
   const [popup, setPopup] = useState(false);
   return (
     <>
-      <div id="certificate">&nbsp;</div>
+      <div id="certificate" />
       <div className="certificate">
         <div className="topic-page" data-aos="fade-down">
           <FontAwesomeIcon icon={faScroll} /> Certificate

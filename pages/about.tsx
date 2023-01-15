@@ -32,11 +32,11 @@ const About = () => {
             </div>
             <p>
               <span className="gap" />
-              I&rsquo;m a new graduate, Prince of Songkla University Phuket
+              I graduated from Prince of Songkla University Phuket
               Campus from the Faculty of Engineering in Computer Engineering.
               I&rsquo;m a person who likes challenges and is always
               enthusiastic. Responsible for work and always ready to learn in
-              the future, I intend to be a Front-end developer because I have
+              the future, I intend to be a Developer because I have
               the ability and determination in computer programming.
             </p>
             <span className="logo-about hide">&lt; T U M /&gt;</span>

@@ -14,6 +14,7 @@ import {
   faNode,
   faPython,
   faBootstrap,
+  faWordpress
 } from "@fortawesome/free-brands-svg-icons";
 
 const Skills = () => {
@@ -84,6 +85,12 @@ const Skills = () => {
               <FontAwesomeIcon icon={faBootstrap} size="4x" />
             </a>
             <p className="hide-mobile">Bootstrap</p>
+          </li>
+          <li onClick={() => openNewTab("https://wordpress.com/")}>
+            <a>
+              <FontAwesomeIcon icon={faWordpress} size="4x" />
+            </a>
+            <p className="hide-mobile">Wordpress</p>
           </li>
           <li onClick={() => openNewTab("https://www.python.org/")}>
             <a>

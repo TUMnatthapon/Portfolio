@@ -20,11 +20,11 @@ const Contact = () => {
           <div className="font-title">Contact Info</div>
           <div className="font-title--wrapper">
             <FontAwesomeIcon icon={faPhone} />
-            <a>082-729-2284</a>
+            <a href="tel:082-7292284" >082-729-2284</a>
           </div>
           <div className="font-title--wrapper">
             <FontAwesomeIcon icon={faLine} />
-            <a> ID : tum..ntp</a>
+            <a href="https://line.me/ti/p/-AeNotzL_Q"> ID : tum..ntp</a>
           </div>
           <div className="font-title--wrapper">
             <FontAwesomeIcon icon={faEnvelope} />
