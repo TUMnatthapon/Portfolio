@@ -69,10 +69,6 @@ const Experience = () => {
                         <h2>Framework</h2>
                         <li>Wordpress</li>
                       </div>
-                      <div>
-                        <h2>Database </h2>
-                        <li>MySQL </li>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -128,10 +124,6 @@ const Experience = () => {
                         <h2>Framework</h2>
                         <li>Wordpress</li>
                       </div>
-                      <div>
-                        <h2>Database </h2>
-                        <li>MySQL </li>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -180,10 +172,6 @@ const Experience = () => {
                     <div>
                       <h2>Framework</h2>
                       <li>NextJS</li>
-                    </div>
-                    <div>
-                      <h2>Database</h2>
-                      <li>MySQL</li>
                     </div>
                   </div>
                 </div>
